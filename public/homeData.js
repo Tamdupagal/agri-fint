@@ -37,21 +37,21 @@ export const achivementData = [
     {
         id: 1,
         name: "TOTAL INVESTMENTS",
-        number: "₹15+",
+        num: "₹15+",
         unit: "CRORES",
         icon: "/assets/investment.svg"
     },
     {
         id: 2,
         name: "RETURNS",
-        number: "16%",
+        num: "16%",
         unit: "PER ANNUM",
         icon: "/assets/return.svg"
     },
     {
         id: 3,
         name: "MANAGED AREA",
-        number: "1600+",
+        num: "2100+",
         unit: "ACRES",
         icon: "/assets/TotalInvestments.svg"
     }

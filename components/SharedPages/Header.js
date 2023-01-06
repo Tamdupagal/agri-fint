@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillPhone, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -7,6 +7,22 @@ import { GoLocation } from 'react-icons/go';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
+    const changeNav = () => {
+        console.log(window.scrollY)
+        if (window.scrollY >= 66) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    };
+
+    useEffect(() => {
+        changeNav()
+        // adding the event when scroll change background
+        window.addEventListener("scroll", changeNav)
+    })
 
     const memuItems =
         <>
@@ -43,7 +59,7 @@ const Header = () => {
         </>
     return (
         <div>
-            <header className="bg-dark text-fontclr w-full px-6 lg:px-20 pb-5 pt-2  flex items-center justify-between gap-20 fixed shadow-lg   z-50 ease-in duration-300">
+            <header className={`bg-dark text-fontclr w-full px-6 lg:px-20 pt-2 pb-4  flex  items-center justify-between gap-20  shadow-lg   z-50 ease-in duration-300 fixed  ${navbar ? "h-20" : "h-40"}`}>
 
 
                 <Link href={"/"}>
@@ -52,22 +68,22 @@ const Header = () => {
                         width={150}
                         height={40}
                         alt="logo"
-                        className='rounded-md'
+                        className={`rounded-md  ${navbar ? "hidden" : "flex"}`}
                     />
                     {/* <h2 className='text-3xl font-bold  '>AgroFint</h2> */}
                 </Link>
 
-                <div className='flex flex-col w-full gap-4'>
-                    <div className='flex items-center justify-between bg-primary w-full rounded-full h-14'>
+                <div className='lg:flex flex-col w-full gap-4 hidden '>
+                    <div className={`flex items-center justify-between bg-cardBg w-full rounded-full h-14 ${navbar ? "hidden" : "flex"}`}>
                         <div className='flex items-center gap-4 ml-10 '>
                             <p className='flex items-center gap-2'> <BsEnvelope className='text-yellow' /> <span className='text-fontclr hover:text-yellow'>needhelp@company.com</span></p>
                             <p className='flex items-center gap-2'> <GoLocation className='text-yellow' /> <span>80 Broklyn Golden Street USA</span></p>
                         </div>
                         <div className='flex items-center gap-3 mr-10'>
-                            <BsTwitter className='text-fontclr hover:text-yellow'/>
-                            <BsFacebook className='text-fontclr hover:text-yellow'/>
-                            <BsTelegram className='text-fontclr hover:text-yellow'/>
-                            <BsInstagram className='text-fontclr hover:text-yellow'/>
+                            <BsTwitter className='text-fontclr hover:text-yellow' />
+                            <BsFacebook className='text-fontclr hover:text-yellow' />
+                            <BsTelegram className='text-fontclr hover:text-yellow' />
+                            <BsInstagram className='text-fontclr hover:text-yellow' />
                         </div>
 
                     </div>
@@ -81,9 +97,9 @@ const Header = () => {
                     </ul>
                 </div>
 
-                <div>
-                    <li class="icon facebook">
-                        <span class="tooltip">+9988-5455445</span>
+                <div className={`   ${navbar ? "hidden" : " hidden lg:block"}`}>
+                    <li className="icon facebook">
+                        <span className="tooltip">+9988-5455445</span>
                         <span><AiFillPhone /></span>
                     </li>
                 </div>
@@ -92,7 +108,7 @@ const Header = () => {
 
 
                 {/*   Menu Icon */}
-                <button onClick={() => setOpen(!open)} className="block lg:hidden text-chardark">
+                <button onClick={() => setOpen(!open)} className="block lg:hidden text-yellow">
                     {!open ? (
                         <AiOutlineMenu className="text-4xl" />
                     ) : (
@@ -102,8 +118,8 @@ const Header = () => {
             </header>
 
             {open ? (
-                <div className="bg-dark rounded w-full  py-7 z-10 fixed">
-                    <ul className=" lg:hidden flex flex-col items-start gap-5 pt-20 px-5">
+                <div className="bg-dark  rounded w-full  py-3 z-10 fixed mt-20">
+                    <ul className=" lg:hidden flex flex-col items-start gap-5 pt-20 px-5 ">
                         {memuItems}
                     </ul>
                 </div>

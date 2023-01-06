@@ -10,7 +10,7 @@ const Contact = () => {
             <div className='w-full lg:w-2/6'>
                 <div className='flex flex-col items-start gap-3'>
                     <p className='text-lg font-semibold text-primary'>Contact Now</p>
-                    <h2 className='text-4xl '>GET IN TOUCH NOW</h2>
+                    <h2 className='text-3xl lg:text-4xl '>GET IN TOUCH NOW</h2>
                     <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
                 </div>
                 <div className='mt-10'>

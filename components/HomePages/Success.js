@@ -3,28 +3,33 @@ import React from 'react';
 import { RxDotFilled } from 'react-icons/rx';
 import { achivementData } from '../../public/homeData';
 import Button from '../../utilities/Button';
+import { CountUp, useCountUp } from 'use-count-up'
 
 const Success = () => {
+   
     return (
         <div className=' bg-dark text-white  px-8 lg:px-24 flex flex-col items-center justify-center   py-10'>
 
             <div className='flex flex-col items-center gap-3 py-14 mb-10'>
                 <p className='text-lg font-semibold text-primary'>WHAT ARE WE PROUD ABOUT?</p>
-                <h2 className='text-6xl '>Agriculture Sector is growing rapidly.</h2>
+                <h2 className='text-3xl lg:text-6xl text-center'>Agriculture Sector is growing rapidly.</h2>
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
 
             <div className='flex flex-col lg:flex-row  items-center justify-between gap-5 w-full mb-10'>
                 {
                     achivementData.map(singleData => {
-                        const { id, name, number, unit, icon } = singleData;
+                       
+                        const { id, name, num, unit, icon } = singleData;
                         return (
                             <div key={id} className="flex items-center  gap-5 w-full">
                                 <Image src={icon} alt={name} width={100} height={50} />
                                 <div>
-                                    <h3 className='text-2xl font-bold '>{name}</h3>
-                                    <h2 className='text-5xl font-bold text-red-500'>{number}</h2>
-                                    <p className='text-paraclr'>{unit}</p>
+                                    <h3 className='text-2xl font-bold text-primary'>{name}</h3>
+                                    <h2 className='text-5xl font-bold text-fontclr '>
+                                       {num}
+                                    </h2>
+                                    <p className='text-paraclr text-sm'>{unit}</p>
                                 </div>
 
                             </div>

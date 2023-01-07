@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <footer className="relative bg-cardBg text-paraclr pt-10  lg:pt-16 ">
+            <footer className="relative bg-cardBg text-paraclr pt-10  lg:pt-16 pb-32">
                 <div className="container mx-auto px-4 py-8">
                     <div className="flex flex-col lg:flex-row gap-14 text-left lg:text-left">
                         <div className="w-full lg:w-4/12 px-4 ">
@@ -200,15 +200,13 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=" flex bg-dark flex-col lg:flex-row  justify-between items-center px-2 lg:px-20 py-5 lg:py-2 font-semibold gap-3">
+                <div className=" flex bg-dark flex-col lg:flex-row  justify-between items-center px-5 py-5 lg:py-2 font-semibold gap-3 absolute bottom-5 right-0 left-32 rounded-l-lg">
                     <div className="flex items-center gap-5">
                         <span onClick={()=>scrollToTop()} className="bg-primary hover:bg-white hover:text-primary text-white cursor-pointer text-4xl p-10 rounded-l-lg"><BsArrowUp /></span>
                         <p>
                             &copy; Copyright 2022 by <span className="text-paraclr hover:text-white cursor-pointer">Agrfint.com</span>
                         </p>
                     </div>
-
-
 
                     <div className="flex items-center justify-center gap-3  mt-5">
                         <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">

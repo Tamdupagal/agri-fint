@@ -74,46 +74,41 @@ const BannerSlide3 = () => {
 
 const BannerCard = () => {
     return (
-        <div className="flex flex-col items-center justify-between w-full h-full pt-40">
-            <div className="flex flex-col  items-center justify-center w-full">
-                <div className="flex items-center justify-center mt-10">
-                    <div className="text-center text-fontclr font-bold">
-                        <p className=" text-2xl  -mb-10">We are Producing Natural Products</p>
-                        <h1 className="text-[80px] lg:text-[170px] my-10">Agriculture.</h1>
-                    </div>
-                </div>
-
-                <Button>Discover</Button>
-
+      <div className="flex flex-col items-center justify-between w-full h-full pt-40">
+        <div className="flex flex-col  items-center justify-center w-full">
+          <div className="flex items-center justify-center mt-10">
+            <div className="text-center text-fontclr font-bold">
+              <p className=" text-2xl  -mb-10">Invest in nature’s lap</p>
+              <h1 className="text-[80px] lg:text-[170px] my-10">Agrifint </h1>
             </div>
+          </div>
 
-
-            <div className="flex flex-col items-center justify-between w-full  ">
-                {/* <hr className="h-[0.5px] bg-fontclr w-4/6 my-10 " /> */}
-                <div className=" flex flex-col lg:flex-row items-center justify-evenly w-full ">
-                    <div className="flex items-center gap-5 ">
-                        <FiSettings className="text-yellow text-6xl font-bold" />
-                        <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                            <h2>THE BEST QUALITY</h2>
-                            <h2>STANDARDS</h2>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-5 p-5">
-                        <FiSettings className="text-yellow text-6xl font-bold" />
-                        <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                            <h2>A SMART ORGANIC</h2>
-                            <h2>SERVICES</h2>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-5">
-                        <FiSettings className="text-yellow text-6xl font-bold" />
-                        <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                            <h2>NATURAL HEALTHY</h2>
-                            <h2>PRODDUCTS</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <Button>Discover</Button>
         </div>
-    )
+
+        <div className="flex flex-col items-center justify-between w-full  ">
+          {/* <hr className="h-[0.5px] bg-fontclr w-4/6 my-10 " /> */}
+          <div className=" flex flex-col lg:flex-row items-center justify-evenly w-full ">
+            <div className="flex items-center gap-5 ">
+              <FiSettings className="text-yellow text-6xl font-bold" />
+              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+                <h2>Gathered farming</h2>
+              </div>
+            </div>
+            <div className="flex items-center gap-5 p-5">
+              <FiSettings className="text-yellow text-6xl font-bold" />
+              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+                <h2>Investments in agriculture</h2>
+              </div>
+            </div>
+            <div className="flex items-center gap-5">
+              <FiSettings className="text-yellow text-6xl font-bold" />
+              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+                <h2>Fixed returns</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
 }

@@ -5,23 +5,25 @@ import { servicesData } from '../../public/homeData';
 
 const Services = () => {
     return (
-        <div className=' px-6 lg:px-20 bg-darkBg  text-fontclr  py-20 services-bg '>
-            <div className='flex flex-col items-center gap-3'>
-                <p className='text-lg font-semibold text-primary'>What We’re Doing</p>
-                <h2 className='text-3xl lg:text-6xl '>PRODUCTS WE OFFER</h2>
-                <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
-            </div>
-            <div className='grid grid-cols-1 lg:grid-cols-4 pt-20 gap-10'>
-                {
-                    servicesData.map(singleService => <ServiceCard key={singleService.id} singleService={singleService} />)
-                }
-            </div>
-
-
-
-
-
+      <div className=" px-6 lg:px-20 bg-darkBg  text-fontclr  py-20 services-bg ">
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-lg font-semibold text-primary">
+            Invest in nature’s lap
+          </p>
+          <h2 className="text-3xl lg:text-6xl ">PRODUCTS WE OFFER</h2>
+          <Image
+            src={"/assets/section-title-icon-1.png"}
+            width={54}
+            height={21}
+            alt="title icon"
+          />
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 pt-20 gap-10">
+          {servicesData.map((singleService) => (
+            <ServiceCard key={singleService.id} singleService={singleService} />
+          ))}
+        </div>
+      </div>
     );
 };
 

@@ -4,7 +4,7 @@ import { projectsData } from '../../public/homeData';
 
 const Projects = () => {
     return (
-        <div className='px-6 lg:px-20 bg-primary text-fontclr  py-20'>
+        <div className='px-6 lg:px-20 bg-primary text-fontclr  py-14'>
             <div className='flex flex-col items-center '>
                 <p className='text-xl font-semibold text-paraclr'>Our Latest Projects</p>
                 <h2 className='text-3xl lg:text-6xl my-3'>Associate partners</h2>
@@ -29,7 +29,7 @@ const ProjectCard = ({ singleProj }) => {
     const { name, desc1, desc2, img } = singleProj;
     return (
         <div >
-            <div className="relative overflow-hidden rounded-lg shadow-lg  h-[442px]">
+            <div className="relative overflow-hidden rounded-lg shadow-lg  h-[442px] project-card">
                 <img className="object-cover w-full h-full " src={img} alt={name} />
 
 

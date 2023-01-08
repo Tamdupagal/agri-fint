@@ -16,99 +16,102 @@ import "swiper/css/effect-fade";
 
 // import required modules
 import { EffectFade, Autoplay, Pagination } from "swiper";
+import { TbPlant, TbRelationOneToOne } from "react-icons/tb";
+import { BsBarChartLine } from "react-icons/bs";
+import {GiFarmTractor } from "react-icons/gi";
 
 
 const Banner = () => {
-    return (
-        <div className="h-[100vh]">
-            <Swiper
-                loop={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                effect={"fade"}
-                direction={"vertical"}
-                pagination={{
-                    clickable: true,
-                }}
+  return (
+    <div className="h-[110vh] pt-10 lg:pt-40">
+      <Swiper
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        effect={"fade"}
+        direction={"vertical"}
+        pagination={{
+          clickable: true,
+        }}
 
-                modules={[EffectFade, Autoplay, Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide><BannerSlide1 /></SwiperSlide>
-                <SwiperSlide><BannerSlide2 /></SwiperSlide>
-                <SwiperSlide><BannerSlide3 /></SwiperSlide>
-            </Swiper>
+        modules={[EffectFade, Autoplay, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide><BannerSlide1 /></SwiperSlide>
+        <SwiperSlide><BannerSlide2 /></SwiperSlide>
+        <SwiperSlide><BannerSlide3 /></SwiperSlide>
+      </Swiper>
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Banner;
 
 
 const BannerSlide1 = () => {
-    return (
-        <div className="banner-slide banner-slide1 flex flex-col items-center justify-center px-6 lg:px-20">
+  return (
+    <div className="banner-slide banner-slide1 flex flex-col items-center justify-center px-6 lg:px-20">
 
-            <BannerCard />
-        </div>
-    )
+      <BannerCard />
+    </div>
+  )
 };
 const BannerSlide2 = () => {
-    return (
-        <div className="banner-slide banner-slide2 flex items-center justify-center px-6 lg:px-20">
+  return (
+    <div className="banner-slide banner-slide2 flex items-center justify-center px-6 lg:px-20">
 
-            <BannerCard />
-        </div>
-    )
+      <BannerCard />
+    </div>
+  )
 };
 const BannerSlide3 = () => {
-    return (
-        <div className="banner-slide banner-slide3 flex items-center justify-center px-6 lg:px-20">
-            <BannerCard />
-        </div>
-    )
+  return (
+    <div className="banner-slide banner-slide3 flex items-center justify-center px-6 lg:px-20">
+      <BannerCard />
+    </div>
+  )
 };
 
 const BannerCard = () => {
-    return (
-      <div className="flex flex-col items-center justify-between w-full h-full pt-40">
-        <div className="flex flex-col  items-center justify-center w-full">
-          <div className="flex items-center justify-center mt-10">
-            <div className="text-center text-fontclr font-bold">
-              <p className=" text-2xl  -mb-10">Invest in nature’s lap</p>
-              <h1 className="text-[80px] lg:text-[170px] my-10">Agrifint </h1>
-            </div>
+  return (
+    <div className="flex flex-col items-center justify-between w-full h-full pt-40">
+      <div className="flex flex-col  items-center justify-center w-full">
+        <div className="flex items-center justify-center mt-10">
+          <div className="text-center text-fontclr font-bold">
+            <p className=" text-2xl  -mb-10">Invest in nature’s lap</p>
+            <h1 className="text-[80px] lg:text-[170px] my-5">Agrifint </h1>
           </div>
-
-          <Button>Discover</Button>
         </div>
 
-        <div className="flex flex-col items-center justify-between w-full  ">
-          {/* <hr className="h-[0.5px] bg-fontclr w-4/6 my-10 " /> */}
-          <div className=" flex flex-col lg:flex-row items-center justify-evenly w-full ">
-            <div className="flex items-center gap-5 ">
-              <FiSettings className="text-yellow text-6xl font-bold" />
-              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                <h2>Gathered farming</h2>
-              </div>
+        <Button>Discover</Button>
+      </div>
+
+      <div className="flex flex-col items-center justify-between w-full  pb-10">
+        {/* <hr className="h-[0.5px] bg-fontclr w-4/6 my-10 " /> */}
+        <div className=" flex flex-col lg:flex-row items-center justify-evenly w-full ">
+          <div className="flex items-center gap-5 ">
+            <TbPlant className="text-yellow text-3xl lg:text-6xl font-bold" />
+            <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+              <h2>Gathered farming</h2>
             </div>
-            <div className="flex items-center gap-5 p-5">
-              <FiSettings className="text-yellow text-6xl font-bold" />
-              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                <h2>Investments in agriculture</h2>
-              </div>
+          </div>
+          <div className="flex items-center gap-5 p-5">
+            <TbRelationOneToOne className="text-yellow text-3xl lg:text-6xl font-bold" />
+            <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+              <h2>Investments in agriculture</h2>
             </div>
-            <div className="flex items-center gap-5">
-              <FiSettings className="text-yellow text-6xl font-bold" />
-              <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
-                <h2>Fixed returns</h2>
-              </div>
+          </div>
+          <div className="flex items-center gap-5">
+            <BsBarChartLine className="text-yellow text-3xl lg:text-6xl font-bold" />
+            <div className="text-xl lg:text-3xl font-semibold text-fontclr text-start">
+              <h2>Fixed returns</h2>
             </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }

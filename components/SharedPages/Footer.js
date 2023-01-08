@@ -34,7 +34,7 @@ const Footer = () => {
                                 <GiFarmer />
                             </span>
                         </div>
-                        <h2 className="text-center text-2xl lg:text-4xl font-bold text-white">WE’RE POPULAR LEADER IN AGRICULTURE & ORGANIC MARKET.</h2>
+                        <h2 className="text-center lg:text-start text-2xl lg:text-4xl font-bold text-white">WE’RE POPULAR LEADER IN AGRICULTURE & ORGANIC MARKET.</h2>
                     </div>  
 
                     <div className="w-full lg:w-1/3 flex items-center justify-center lg:justify-end">
@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <footer className="relative bg-cardBg text-paraclr pt-10  lg:pt-16 pb-32">
+            <footer className="relative bg-cardBg text-paraclr pt-6  lg:pt-16 pb-32">
                 <div className="container mx-auto px-4 py-8">
                     <div className="flex flex-col lg:flex-row gap-14 text-left lg:text-left">
                         <div className="w-full lg:w-4/12 px-4 ">
@@ -200,9 +200,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=" flex bg-dark flex-col lg:flex-row  justify-between items-center px-5 py-5 lg:py-2 font-semibold gap-3 absolute bottom-5 right-0 left-32 rounded-l-lg">
+                <div className=" flex bg-dark flex-col lg:flex-row  justify-between  items-center pr-5  font-semibold gap-3 absolute bottom-5 right-0 left-0 lg:left-32 rounded-l-lg py-5 lg:py-0">
                     <div className="flex items-center gap-5">
-                        <span onClick={()=>scrollToTop()} className="bg-primary hover:bg-white hover:text-primary text-white cursor-pointer text-4xl p-10 rounded-l-lg"><BsArrowUp /></span>
+                        <span onClick={()=>scrollToTop()} className="bg-primary hover:bg-white hover:text-primary text-white hidden lg:block cursor-pointer text-4xl p-10 rounded-l-lg"><BsArrowUp /></span>
                         <p>
                             &copy; Copyright 2022 by <span className="text-paraclr hover:text-white cursor-pointer">Agrfint.com</span>
                         </p>

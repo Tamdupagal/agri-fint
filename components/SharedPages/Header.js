@@ -11,7 +11,7 @@ const Header = () => {
 
     const changeNav = () => {
         console.log(window.scrollY)
-        if (window.scrollY >= 66) {
+        if (window.scrollY >= 50) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -37,7 +37,7 @@ const Header = () => {
                 </Link>
             </li>
             <li className="text-paraclr hover:text-fontclr ">
-                <Link href={"#"} className="flex items-center">
+                <Link href={"/products"} className="flex items-center">
                     <span>Products</span>
                 </Link>
             </li>
@@ -59,7 +59,7 @@ const Header = () => {
         </>
     return (
         <div>
-            <header className={`bg-dark text-fontclr w-full px-6 lg:px-20 pt-2 pb-4  flex  items-center justify-between gap-20  shadow-lg   z-50 ease-in duration-300 fixed  ${navbar ? "h-20" : "h-40"}`}>
+            <header className={`bg-dark text-fontclr w-full px-6 lg:px-20 pt-2 pb-4  flex  items-center justify-between gap-20  shadow-lg   z-50 ease-in duration-300 fixed  ${navbar ? "h-20" : "h-24 lg:h-40"}`}>
 
 
                 <Link href={"/"}>

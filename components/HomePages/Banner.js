@@ -23,7 +23,7 @@ import {GiFarmTractor } from "react-icons/gi";
 
 const Banner = () => {
   return (
-    <div className="h-[110vh] pt-10 lg:pt-40">
+    <div className="h-[100vh] lg:[110vh] pt-10 lg:pt-40 ">
       <Swiper
         loop={true}
         autoplay={{
@@ -89,7 +89,7 @@ const BannerCard = () => {
         <Button>Discover</Button>
       </div>
 
-      <div className="flex flex-col items-center justify-between w-full  pb-10">
+      <div className="flex flex-col items-center justify-between w-full  pb-20">
         {/* <hr className="h-[0.5px] bg-fontclr w-4/6 my-10 " /> */}
         <div className=" flex flex-col lg:flex-row items-center justify-evenly w-full ">
           <div className="flex items-center gap-5 ">

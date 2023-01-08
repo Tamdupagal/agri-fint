@@ -6,6 +6,7 @@ import Features from "../components/HomePages/Features";
 import HomeAbout from "../components/HomePages/HomeAbout";
 import Projects from "../components/HomePages/Projects";
 import Services from "../components/HomePages/Services";
+import StartSteps from "../components/HomePages/StartSteps";
 import Success from "../components/HomePages/Success";
 import Testimonial from "../components/HomePages/Testimonial";
 import styles from "../styles/Home.module.css";
@@ -23,6 +24,7 @@ export default function Home() {
       <div>
         <Banner />
         <Features />
+        <StartSteps />
         <Services />
         <HomeAbout />
 

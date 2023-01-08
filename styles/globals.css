@@ -119,11 +119,13 @@
   width: 100%;
   height: 100%;
 }
-.project-card img{
+
+.project-card img {
   transition: 0.5s all linear;
   overflow: hidden;
 }
-.project-card:hover img{
+
+.project-card:hover img {
   transform: scale(1.1);
 }
 
@@ -235,4 +237,17 @@
   height: 100%;
   position: relative !important;
   object-fit: cover;
+}
+
+/*Remove Accordion Symbol*/
+.details-container summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-container>summary {
+  list-style: none;
+}
+
+.details-container>summary::-webkit-details-marker {
+  display: none;
 }

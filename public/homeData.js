@@ -37,29 +37,7 @@ export const servicesData = [
   },
 ];
 
-export const achivementData = [
-  {
-    id: 1,
-    name: "TOTAL INVESTMENTS",
-    num: "₹15+",
-    unit: "CRORES",
-    icon: "/assets/investment.svg",
-  },
-  {
-    id: 2,
-    name: "RETURNS",
-    num: "16%",
-    unit: "PER ANNUM",
-    icon: "/assets/return.svg",
-  },
-  {
-    id: 3,
-    name: "MANAGED AREA",
-    num: "2100+",
-    unit: "ACRES",
-    icon: "/assets/TotalInvestments.svg",
-  },
-];
+
 
 export const testimonialData = [
   {

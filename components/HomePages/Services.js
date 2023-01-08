@@ -32,7 +32,7 @@ export default Services;
 const ServiceCard = ({ singleService }) => {
     const { name, details, img, icon } = singleService;
     return (
-        <div className='bg-cardBg  text-fontclr rounded-lg px-6 py-14 flex flex-col items-center justify-center gap-5 text-center product-card'>
+        <div className='bg-cardBg  text-fontclr rounded-lg px-6 py-6 flex flex-col items-center justify-center gap-5 text-center product-card'>
             <div className='relative my-5 '>
                 <Image src={img} alt={name} width={196} height={196} className="rounded-full product-img " />
                 <div className="text-5xl  bg-primary text-white  w-20 h-20 rounded-full flex items-center justify-center p-7  absolute -bottom-7 right-14 product-icon">

@@ -23,7 +23,7 @@ import {GiFarmTractor } from "react-icons/gi";
 
 const Banner = () => {
   return (
-    <div className="h-[110vh] pt-10 lg:pt-40">
+    <div className="h-[110vh] pt-10 lg:pt-32">
       <Swiper
         loop={true}
         autoplay={{

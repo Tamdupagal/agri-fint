@@ -27,8 +27,6 @@ export default function Home() {
         <StartSteps />
         <Services />
         <HomeAbout />
-
-
         <Testimonial />
         <Success />
         <Projects />

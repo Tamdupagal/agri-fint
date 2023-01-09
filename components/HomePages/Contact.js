@@ -6,7 +6,7 @@ import Button from '../../utilities/Button';
 
 const Contact = () => {
     return (
-        <div className='px-6 lg:px-20 bg-darkBg text-fontclr   py-20 flex flex-col lg:flex-row items-center justify-between gap-10'>
+        <div className='px-6 lg:px-20 bg-darkBg text-fontclr pt-24 lg:pt-40  py-20 flex flex-col lg:flex-row items-center justify-between gap-10'>
             <div className='w-full lg:w-2/6'>
                 <div className='flex flex-col items-start gap-3'>
                     <p className='text-lg font-semibold text-primary'>Contact Now</p>
@@ -57,9 +57,15 @@ const Contact = () => {
             <div className='w-full lg:w-4/6 '>
                 <div className='bg-cardBg rounded-lg  w-full p-10'>
                     <form>
-                        <div className='flex flex-col lg:flex-row items-center gap-14'>
-                            <input type="text" placeholder='Your Name' className='bg-dark text-paraclr px-10 w-full py-5 rounded-lg' />
-                            <input type="email" placeholder='Email Address' className='bg-dark text-paraclr px-10 w-full py-5 rounded-lg' />
+                        <div className='flex flex-col  items-center gap-5'>
+                        <div className='flex flex-col lg:flex-row items-center gap-5 w-full '>
+                        <input type="text" placeholder='Your Name' className='bg-dark text-paraclr px-5 w-full py-5 rounded-lg' />
+                        <input type="email" placeholder='Email Address' className='bg-dark text-paraclr px-5 w-full py-5 rounded-lg' />
+                        </div>
+                        <div className='flex flex-col lg:flex-row items-center gap-5 w-full'>
+                        <input type="text" placeholder='Phone' className='bg-dark text-paraclr px-5 w-full py-5 rounded-lg' />
+                        <input type="email" placeholder='Subject' className='bg-dark text-paraclr px-5 w-full py-5 rounded-lg' />
+                        </div>
                         </div>
                         <textarea name="" id="" cols="20" rows="10" placeholder='Write a Message' className='bg-dark text-paraclr px-10 w-full py-5 rounded-lg my-8'></textarea>
 

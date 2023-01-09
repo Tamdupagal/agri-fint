@@ -44,14 +44,14 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <footer className="relative bg-cardBg text-paraclr pt-6  lg:pt-16 pb-32">
+            <footer className="relative bg-cardBg text-paraclr pt-6  lg:pt-16 pb-32 lg:px-40 ">
                 <div className="container mx-auto px-4 py-8">
                     <div className="flex flex-col lg:flex-row gap-14 text-left lg:text-left">
                         <div className="w-full lg:w-4/12 px-4 ">
                             <div className="flex items-start flex-col justify-start gap-1">
                                 <Link href={"/"}>
                                     <Image
-                                        src={"/logo2.png"}
+                                        src={"/logo3.png"}
                                         width={200}
                                         height={40}
                                         alt="logo"
@@ -74,7 +74,7 @@ const Footer = () => {
                                     <span className="block uppercase text-xl text-white   font-semibold mb-5">
                                         AgriFint
                                     </span>
-                                    <ul className="list-unstyled text-lg">
+                                    <ul className="list-unstyled text-base">
                                         <li>
                                             <Link
                                                 className="font-semibold hover:text-primary  block pb-2"
@@ -124,7 +124,7 @@ const Footer = () => {
                                     <span className="block uppercase text-xl text-white  font-semibold mb-5">
                                         Important Links
                                     </span>
-                                    <ul className="list-unstyled text-lg">
+                                    <ul className="list-unstyled text-base">
                                         <li>
                                             <Link
                                                 className="font-semibold hover:text-primary block pb-2"
@@ -180,7 +180,7 @@ const Footer = () => {
                                     <span className="block uppercase text-xl text-white  font-semibold mb-5">
                                         Contact us
                                     </span>
-                                    <ul className="list-unstyled text-lg font-semibold">
+                                    <ul className="list-unstyled text-base font-semibold">
                                         <li>
                                             <p className="text-primary ">+91-7231844455</p>
                                         </li>
@@ -200,9 +200,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=" flex bg-dark flex-col lg:flex-row  justify-between  items-center pr-5  font-semibold gap-3 absolute bottom-5 right-0 left-0 lg:left-32 rounded-l-lg py-5 lg:py-0">
+                <div className=" flex bg-dark flex-col lg:flex-row  justify-between  items-center pr-5  font-semibold gap-3 absolute bottom-0 right-0 left-0 lg:left-32 rounded-l-lg py-5 lg:py-0">
                     <div className="flex items-center gap-5">
-                        <span onClick={()=>scrollToTop()} className="bg-primary hover:bg-white hover:text-primary text-white hidden lg:block cursor-pointer text-4xl p-10 rounded-l-lg"><BsArrowUp /></span>
+                        <span onClick={()=>scrollToTop()} className="bg-primary hover:bg-white hover:text-primary text-white hidden lg:block cursor-pointer text-4xl p-6 rounded-l-lg"><BsArrowUp /></span>
                         <p>
                             &copy; Copyright 2022 by <span className="text-paraclr hover:text-white cursor-pointer">Agrfint.com</span>
                         </p>

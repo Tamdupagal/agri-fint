@@ -1,5 +1,5 @@
 import React from "react";
-import Envato from "./envato";
+// import Envato from "./envato";
 import Testimonial from "../HomePages/Testimonial";
 import Image from "next/image";
 import Team_members from "./Team_members";

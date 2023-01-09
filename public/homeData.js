@@ -112,3 +112,30 @@ export const projectsData = [
     img: "/assets/project-one-4.jpg",
   },
 ];
+
+export const accordionData = [
+  {
+    id: 222,
+    header: "Create account and complete KYC",
+    details: "Sign up with username and password. Verify your KYC which includes Pan Card, Adhaar card & Bank account details.",
+    img: "/assets/steps/step-1.png"
+  },
+  {
+    id: 223,
+    header: " Choose investment option",
+    details: "Select the plan best suited to you and select the number of units you want to invest in.",
+    img: "/assets/steps/step2.png"
+  },
+  {
+    id: 224,
+    header: " Add money and invest",
+    details: "Simply add money to Growpital Wallet, e-sign required documents.",
+    img: "/assets/steps/step3.png"
+  },
+  {
+    id: 225,
+    header: " Harvest your earnings ",
+    details: "Automate your earnings with assured return at scheduled dates.",
+    img: "/assets/steps/step4.png"
+  },
+]

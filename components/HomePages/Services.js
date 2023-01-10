@@ -5,12 +5,12 @@ import { servicesData } from '../../public/homeData';
 
 const Services = () => {
     return (
-      <div className=" px-6 lg:px-20 bg-darkBg  text-fontclr  py-20 services-bg ">
+      <div className=" px-6 lg:px-36 bg-darkBg  text-fontclr  py-20 services-bg ">
         <div className="flex flex-col items-center gap-3">
           <p className="text-lg font-semibold text-primary">
             Invest in nature’s lap
           </p>
-          <h2 className="text-3xl lg:text-6xl ">PRODUCTS WE OFFER</h2>
+          <h2 className="text-3xl lg:text-5xl ">PRODUCTS WE OFFER</h2>
           <Image
             src={"/assets/section-title-icon-1.png"}
             width={54}

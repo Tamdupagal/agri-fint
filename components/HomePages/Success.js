@@ -7,11 +7,11 @@ import CountUp from 'react-countup';
 const Success = () => {
 
     return (
-        <div className=' bg-dark text-white  px-8 lg:px-24 flex flex-col items-center justify-center   py-10'>
+        <div className=' bg-dark text-white  px-8 lg:px-36 flex flex-col items-center justify-center   py-10'>
 
             <div className='flex flex-col items-center gap-3 py-10 mb-10'>
                 <p className='text-lg font-semibold text-primary'>WHAT ARE WE PROUD ABOUT?</p>
-                <h2 className='text-3xl lg:text-6xl text-center'>Agriculture Sector is growing rapidly.</h2>
+                <h2 className='text-3xl lg:text-5xl text-center'>Agriculture Sector is growing rapidly.</h2>
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
 

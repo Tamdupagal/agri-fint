@@ -6,10 +6,10 @@ import { accordionData } from '../../public/homeData';
 
 const StartSteps = () => {
     return (
-        <div className='px-6 lg:px-20 bg-dark text-fontclr  py-14'>
+        <div className='px-6 lg:px-36 bg-dark text-fontclr  py-14'>
             <div className='flex flex-col items-center text-center'>
                 <p className='text-xl font-semibold text-primary capitalize'>How To Get Started?</p>
-                <h2 className='text-3xl lg:text-6xl my-3 uppercase'>Start investing in 4 simple steps</h2>
+                <h2 className='text-3xl lg:text-5xl my-3 uppercase'>Start investing in 4 simple steps</h2>
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
             <div className='mt-10'>
@@ -28,7 +28,7 @@ const AccordionCard = () => {
     const [id, setId] = useState('');
 
     return (
-        <div className='flex flex-col lg:flex-row items-center justify-between'>
+        <div className='flex flex-col lg:flex-row items-center justify-between '>
             <div className='w-full lg:w-1/2'>
                 <AccordionImg id={id} />
             </div>

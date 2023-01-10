@@ -12,22 +12,22 @@ const SideBarCard = () => {
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl dropdown sideHead">
         <Link href={"/products/product1"} className="flex items-center">
-          <span>Agrifint product1</span>
+          <span>Fresh Harvest</span>
         </Link>
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl  ease-in duration-300 sideHead">
         <Link href={"/products/product1"} className="flex items-center">
-          <span>Agrifint product2</span>
+          <span>Sowing seeds</span>
         </Link>
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
         <Link href={"/products/product1"} className="flex items-center">
-          <span>Agrifint product3 </span>
+        <span>Agro Gain</span>
         </Link>
-      </li>
-      <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
+        </li>
+        <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
         <Link href={"/products/product1"} className="flex items-center">
-          <span>Agrifint product4</span>
+        <span>AGventure</span>
         </Link>
       </li>
     </div>

@@ -6,7 +6,7 @@ function Team_members() {
     <div className="lg:px-20 bg-dark  text-fontclr py-20 ">
       <div className="flex flex-col items-center gap-3">
         <p className="text-lg font-semibold text-primary">Team Members</p>
-        <h2 className="text-3xl lg:text-6xl ">MEET OUR FARMERS</h2>
+        <h2 className="text-3xl lg:text-5xl uppercase ">The tripod team</h2>
         <Image
           src={"/assets/section-title-icon-1.png"}
           width={54}
@@ -101,8 +101,8 @@ function Team_members() {
             className="Team_member1 duration-500 rounded-full rounded-br-lg"
           />
           <div className="sm:text-right text-right mt-2">
-            <h3 className=" text-3xl font-bold ">Aleesha Brown</h3>
-            <p className="text-md text-paraclr">Senior Farmer</p>
+            <h3 className=" text-3xl font-bold ">Nirvan Nandy</h3>
+            <p className="text-md text-paraclr">CSO (Chief Sales officer)</p>
           </div>
         </div>
         <div className="sm:flex sm:flex-col py-5 sm:justify-center">
@@ -113,8 +113,8 @@ function Team_members() {
           />
 
           <div className="sm:text-right text-right mt-2">
-            <h3 className=" text-3xl font-bold ">Aleesha Brown</h3>
-            <p className="text-md text-paraclr">Senior Farmer</p>
+            <h3 className=" text-3xl font-bold ">Abhijeet Vidit</h3>
+            <p className="text-md text-paraclr">Founder</p>
           </div>
         </div>
         <div className="sm:flex sm:flex-col py-5 sm:justify-center">
@@ -125,8 +125,10 @@ function Team_members() {
           />
 
           <div className="sm:text-right text-right mt-2">
-            <h3 className=" text-3xl font-bold ">Aleesha Brown</h3>
-            <p className="text-md text-paraclr">Senior Farmer</p>
+            <h3 className=" text-3xl font-bold ">Saket Kale</h3>
+            <p className="text-md text-paraclr">
+              CMO (Chief Marketing Officer)
+            </p>
           </div>
         </div>
       </div>

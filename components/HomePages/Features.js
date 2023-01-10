@@ -9,7 +9,7 @@ import Button from '../../utilities/Button';
 
 const Features = () => {
     return (
-        <div className='text-fontclr bg-darkBg px-5 lg:px-24 h-auto   flex flex-col lg:flex-row items-center justify-between py-14'>
+        <div className='text-fontclr bg-darkBg px-5 lg:px-36 h-auto   flex flex-col lg:flex-row items-center justify-between py-14'>
             <div className='flex flex-col items-center lg:items-start gap-10 w-full lg:w-1/2'>
                 <div>
                     <p className='text-sm lg:text-lg text-primary font-semibold mb-4 flex items-center'>

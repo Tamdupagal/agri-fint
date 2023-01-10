@@ -5,11 +5,11 @@ import Button from '../../utilities/Button';
 
 const HomeAbout = () => {
     return (
-        <div className=' px-6 lg:px-20 bg-dark text-fontclr  py-20 flex flex-col lg:flex-row items-center justify-between gap-10 relative'>
+        <div className=' px-6 lg:px-36 bg-dark text-fontclr  py-20 flex flex-col lg:flex-row items-center justify-between gap-10 relative'>
             <div className='w-full lg:w-3/5'>
                 <div className='flex flex-col items-start gap-3'>
                     <p className='text-lg font-semibold text-primary'>Get to Know Agrifint</p>
-                    <h2 className='text-3xl lg:text-6xl '>AGRION IS THE AGRICULTURE AND ORGANIC FARM</h2>
+                    <h2 className='text-3xl lg:text-5xl '>AGRION IS THE AGRICULTURE AND ORGANIC FARM</h2>
                     <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
                 </div>
                 <div className='text-start pt-10'>

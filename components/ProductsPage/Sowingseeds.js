@@ -2,16 +2,19 @@ import React from "react";
 import Image from "next/image";
 import SideBar from "./sidebar/SideBar";
 import { FaHandHoldingUsd } from "react-icons/fa";
+import { TiTick } from "react-icons/ti";
 
-const Product3 = () => {
+const Product2 = () => {
   return (
     <div className="lg:pt-32 pt-20 pb-20 bg-dark">
       <div className={"service_page"}>
         <div className="text-center text-white pt-24 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-            Home / Product 3{" "}
+            Home / Sowing seeds
           </a>
-          <h2 className="text-5xl font-bold tracking-widest py-3">Product 3</h2>
+          <h2 className="text-5xl font-bold tracking-widest py-3">
+            Sowing seeds
+          </h2>
         </div>
       </div>
       <div className=" flex flex-col lg:flex-row items-start justify-between gap-10 pt-16 my-16 px-5 lg:px-48 ">
@@ -35,35 +38,64 @@ const Product3 = () => {
           </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Agrifint Product1
+            Harvest Innovation TO Sowing Seeds
           </h1>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet finibus eros.
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the ndustry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. When an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
+            Among the major field crops, oats, wheat, and rye are sown, grasses
+            and legumes are seeded and maize and soybeans are planted. In
+            planting, wider rows generally 75 cm (30 in) or more) are used, and
+            the intent is to have precise; even spacing between individual seeds
+            in the row, various mechanisms have been devised to count out
+            individual seeds at exact intervals.
           </p>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet
+            Whereas Advance sowing is a process that allows the production of
+            annual crops from perennial grassland. It involves dry sowing crops
+            directly into existing pastures without using tillage, fertilisers
+            or chemicals.
           </p>
-          <Accordion />
+          <h1 className="py-2 text-3xl font-bold text-white capitalize ">
+            Project Challenges:
+          </h1>
+          <p className="text-md leading-8 text-white py-5">
+            At sowing, management and environment are the key issues. Factors
+            affecting the establishment percentage include management factors
+            such as depth of sowing, row spacing, seed size and herbicide
+            application as well as environmental factors such as soil moisture
+            and temperature. But with an excellent Agronomic team, we are able
+            to identify and conclude the problems.
+          </p>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white">
+              Initiate annual investment plan
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Fixed return</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">
+              Payout frequency - quarterly
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Easy short lockin</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Tax benefited</p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Product3;
+export default Product2;
 
 const SideBarCard2 = () => {
   return (

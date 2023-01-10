@@ -34,9 +34,9 @@ function Product() {
       </div>
       <div className="w-full xl:w-1/2 pt-20 px-10">
         <p className="text-lg font-semibold text-primary py-1 md:px-10">
-          Our Benefits
+          Our proud partners
         </p>
-        <h1 className="text-3xl py-1 lg:text-6xl md:py-5 md:px-10">
+        <h1 className="text-3xl py-1 lg:text-5xl md:py-5 md:px-10">
           PROVIDING HIGH QUALITY PRODUCTS
         </h1>
         <Image

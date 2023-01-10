@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SideBar from "./sidebar/SideBar";
 import { FaHandHoldingUsd } from "react-icons/fa";
+import { TiTick } from "react-icons/ti";
 
 const Product4 = () => {
   return (
@@ -9,11 +10,9 @@ const Product4 = () => {
       <div className={"service_page"}>
         <div className="text-center text-white pt-16 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-            Home / Product 4
+            Home / AGventure
           </a>
-          <h2 className="text-5xl font-bold tracking-widest py-3">
-            Product 4
-          </h2>
+          <h2 className="text-5xl font-bold tracking-widest py-3">AGventure</h2>
         </div>
       </div>
       <div className=" flex flex-col lg:flex-row items-start justify-between gap-10 pt-12  lg:pt-16 my-16 px-5 lg:px-48 ">
@@ -35,30 +34,51 @@ const Product4 = () => {
               <FaHandHoldingUsd />
             </div>
           </div>
-
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Agrifint Product1
+            Harvest Innovation TO AGventure
           </h1>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet finibus eros.
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the ndustry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. When an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
+            Agriculture, as we know is the main livelihood of majority of
+            families in rural and suburban areas all over the world. There are
+            many ways to earn good income in agriculture. If you have a piece of
+            land, no matter how big or small it is, you can start farming.
           </p>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet
+            With growing purchasing power, investors in India are now searching
+            for innovative ideas to earn returns from their investments. One
+            such way is investing in agricultural land. While some investors
+            keep such land as an asset, there is a section of investors who
+            leverage the growing market of organic fruits and vegetables, to
+            supplement their income. A number of experts have agreed that farm
+            investment is a safe option for parking one’s funds as the return on
+            investment is usually higher than other investments and also lends
+            safety to investors’ money. Also termed as agrorealty, the market
+            for such investors is growing, especially after the pandemic.
           </p>
-          <Accordion />
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white">
+              Grande 2 annual investment plan
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Fixed return</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">
+              Payout frequency - quarterly
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Easy short lockin</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Tax benefited</p>
+          </div>
         </div>
       </div>
     </div>

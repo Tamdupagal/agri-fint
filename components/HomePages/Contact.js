@@ -6,7 +6,7 @@ import Button from '../../utilities/Button';
 
 const Contact = () => {
     return (
-        <div className='px-6 lg:px-20 bg-darkBg text-fontclr pt-24 lg:pt-40  py-20 flex flex-col lg:flex-row items-center justify-between gap-10'>
+        <div className='px-6 lg:px-36 bg-darkBg text-fontclr pt-24 lg:pt-40  py-20 flex flex-col lg:flex-row items-center justify-between gap-10'>
             <div className='w-full lg:w-2/6'>
                 <div className='flex flex-col items-start gap-3'>
                     <p className='text-lg font-semibold text-primary'>Contact Now</p>

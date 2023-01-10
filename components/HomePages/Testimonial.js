@@ -14,10 +14,10 @@ import { Autoplay, Navigation } from "swiper";
 
 const Testimonial = () => {
     return (
-        <div className=' px-6 lg:px-20 bg-darkBg  text-fontclr  py-20 '>
+        <div className=' px-6 lg:px-36 bg-darkBg  text-fontclr  py-20 '>
             <div className='flex flex-col items-center gap-3'>
                 <p className='text-lg font-semibold text-primary'>Our Testimonials</p>
-                <h2 className='text-3xl lg:text-6xl '>WHAT THEY’RE TAKING ABOUT</h2>
+                <h2 className='text-3xl lg:text-5xl '>WHAT THEY’RE TAKING ABOUT</h2>
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
 

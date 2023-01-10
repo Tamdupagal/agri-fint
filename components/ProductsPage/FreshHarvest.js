@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import SideBar from "./sidebar/SideBar";
 import { FaHandHoldingUsd } from "react-icons/fa";
+import { TiTick } from "react-icons/ti";
+
 
 const Product1 = () => {
   return (
@@ -9,10 +11,10 @@ const Product1 = () => {
       <div className={"service_page"}>
         <div className="text-center text-white pt-24 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-            Home / Product 1
+            Home / Fresh Harvest
           </a>
           <h2 className="text-5xl font-bold tracking-widest py-3">
-            Product1
+            Fresh Harvest
           </h2>
         </div>
       </div>
@@ -37,28 +39,63 @@ const Product1 = () => {
           </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Agrifint Product1
+            Harvest Innovation TO Fresh Harvest
           </h1>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet finibus eros.
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the ndustry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. When an unknown printer
-            took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
+            Harvesting is an art of gathering a ripe crop from the fields.
+            Reaping is the cutting of grain or pulse for harvest, typically
+            using a scythe, sickle, or reaper. On smaller farms with minimal
+            mechanization, harvesting is the most labor-intensive activity of
+            the growing season. On large mechanized farms, harvesting uses the
+            most expensive and sophisticated farm machinery, such as the combine
+            harvester.
           </p>
           <p className="text-md leading-8 text-white py-5">
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet
+            Process automation has increased the efficiency of both the seeding
+            and harvesting processes. Specialized harvesting equipment utilizing
+            conveyor belts to mimic gentle gripping and masstransport replaces
+            the manual task of removing each seedling by hand. The term
+            &quots;harvesting&quots; in general usage may include immediate
+            postharvest handling, including cleaning, sorting, packing, and
+            cooling.
           </p>
-          <Accordion />
+          <h1 className="py-2 text-3xl font-bold text-white capitalize ">
+            Project Challenges:
+          </h1>
+          <p className="text-md leading-8 text-white py-5">
+            In many ways, maintaining the quality of the crop where nowadays
+            insecticides and pesticides are used. We here have proved that new
+            age farming with traditional techniques can reap you a quality crop.
+            Our 8000+ acre land are such examples of quality farming. Feels free
+            to visit.
+          </p>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white">
+              Monthly investment Plan
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Fixed return</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">
+              Payout frequency - quarterly
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">
+              Easy short lockin
+            </p>
+          </div>
+          <div className="flex flex-row items-center">
+            <TiTick className="text-yellow text-3xl" />
+            <p className="text-md leading-8 text-white ">Tax benefited</p>
+          </div>
+          {/*  <Accordion /> */}
         </div>
       </div>
     </div>

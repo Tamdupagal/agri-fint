@@ -7,7 +7,7 @@ const Projects = () => {
         <div className='px-6 lg:px-20 bg-primary text-fontclr  py-14'>
             <div className='flex flex-col items-center '>
                 <p className='text-xl font-semibold text-paraclr'>Our Latest Projects</p>
-                <h2 className='text-3xl lg:text-6xl my-3'>Associate partners</h2>
+                <h2 className='text-3xl lg:text-5xl my-3'>Associate partners</h2>
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
 

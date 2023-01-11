@@ -4,6 +4,7 @@ import Banner from "../components/HomePages/Banner";
 import Contact from "../components/HomePages/Contact";
 import Features from "../components/HomePages/Features";
 import HomeAbout from "../components/HomePages/HomeAbout";
+import OrganicFood from "../components/HomePages/OrganicFood";
 import Projects from "../components/HomePages/Projects";
 import Services from "../components/HomePages/Services";
 import StartSteps from "../components/HomePages/StartSteps";
@@ -27,6 +28,7 @@ export default function Home() {
         <StartSteps />
         <Services />
         <HomeAbout />
+        <OrganicFood/>
         <Testimonial />
         <Success />
         <Projects />

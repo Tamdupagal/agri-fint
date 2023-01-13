@@ -37,7 +37,7 @@ function Product() {
           Our proud partners
         </p>
         <h1 className="text-3xl py-1 lg:text-5xl md:py-5 md:px-10">
-          PROVIDING HIGH QUALITY PRODUCTS
+          PROVIDING SECURE INVESTMENTS
         </h1>
         <Image
           className="md:mt-5 py-1 md:ml-10"
@@ -47,9 +47,8 @@ function Product() {
           alt="title icon"
         />
         <p className="text-paraclr text-xl pb-10 py-5 md:px-10">
-          There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs
-          condmentum leo massa mollis estiegittis miristum nulla sed medy
-          fringilla vitae.
+          The beauty and combination of secure investments and high return. A
+          path of Agri Investments.
         </p>
       </div>
     </div>

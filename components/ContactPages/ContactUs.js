@@ -19,7 +19,7 @@ const ContactUs = () => {
         <div className={"service_page"}>
           <div className="text-center text-white pt-24 ">
             <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-              Home / About
+              Home / ContactUs
             </a>
             <h2 className="text-5xl font-bold tracking-widest py-3">
               Contact Us

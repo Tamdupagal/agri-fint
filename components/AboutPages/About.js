@@ -50,32 +50,31 @@ function About() {
                 portfolios.
               </p>
             </div>
-            {
-              <div className="flex justify-between lg:px-4 py-3">
-                <div>
-                  <div className="flex flex-row items-center">
-                    <TiTick className="text-yellow text-3xl" />
-                    <p className="text-md leading-8 text-white ">
-                      Fixed return
-                    </p>
-                  </div>{" "}
-                  <p className="text-paraclr ml-2 py-5">
-                    Lorem ipsum is free do sited
+
+            <div className="flex justify-between lg:px-4 py-3">
+              <div>
+                <div className="flex flex-row items-center">
+                  {/* <TiTick className="text-yellow text-3xl" /> */}
+                  <p className="text-paraclr text-xl  ">
+                    A vision to help and educate people about agricultural
+                    investments so that you know ‘how green the the future can
+                    be’
                   </p>
-                </div>
-                <div>
-                  <div className="flex flex-row items-center">
-                    <TiTick className="text-yellow text-3xl" />
-                    <p className="text-md leading-8 text-white ">
-                      Fixed return
-                    </p>
-                  </div>
-                  <p className="text-paraclr ml-2 py-5">
-                    Lorem ipsum is free do sited
-                  </p>
-                </div>
+                </div>{" "}
+                <p className="text-primary text-xl">
+                  If there is a future, it will be green
+                </p>
               </div>
-            }
+              {/* <div>
+                <div className="flex flex-row items-center">
+                  <TiTick className="text-yellow text-3xl" />
+                  <p className="text-md leading-8 text-white ">Fixed return</p>
+                </div>
+                <p className="text-paraclr ml-2 py-5">
+                  Lorem ipsum is free do sited
+                </p>
+              </div> */}
+            </div>
           </div>
         </div>
       </div>

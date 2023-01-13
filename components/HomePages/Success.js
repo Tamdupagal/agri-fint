@@ -32,7 +32,7 @@ const Success = () => {
                     <div>
                         <h3 className='text-2xl font-bold text-primary'>RETURNS</h3>
                         <h2 className='text-5xl font-bold text-fontclr '>
-                            <CountUp enableScrollSpy={true} end={16} duration={2} />%
+                            <CountUp enableScrollSpy={true} end={18} duration={2} />%
                         </h2>
                         <p className='text-paraclr text-sm'>PER ANNUM</p>
                     </div>

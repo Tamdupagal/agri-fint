@@ -6,7 +6,7 @@ const Button = ({ children }) => {
     return (
       <button className="main-btn">
         <Link href={"#"}>{children}</Link>
-        <BsArrowRight className=" text-4xl rounded-lg circle	" />
+        <BsArrowRight className=" text-3xl rounded-lg circle text-dark	" />
       </button>
     );
 };

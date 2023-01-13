@@ -3,7 +3,6 @@ import Image from "next/image";
 import Banner from "../components/HomePages/Banner";
 import Contact from "../components/HomePages/Contact";
 import Features from "../components/HomePages/Features";
-import HomeAbout from "../components/HomePages/HomeAbout";
 import OrganicFood from "../components/HomePages/OrganicFood";
 import Projects from "../components/HomePages/Projects";
 import Services from "../components/HomePages/Services";
@@ -24,11 +23,10 @@ export default function Home() {
 
       <div>
         <Banner />
-        <Features />
-        <StartSteps />
         <Services />
-        <HomeAbout />
+        <Features />
         <OrganicFood/>
+        <StartSteps />
         <Testimonial />
         <Success />
         <Projects />

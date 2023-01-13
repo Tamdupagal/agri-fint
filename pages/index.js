@@ -23,9 +23,9 @@ export default function Home() {
 
       <div>
         <Banner />
-        <Services />
-        <Features />
         <OrganicFood/>
+        <Features />
+        <Services />
         <StartSteps />
         <Testimonial />
         <Success />

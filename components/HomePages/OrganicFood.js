@@ -13,7 +13,7 @@ const OrganicFood = () => {
         <div className="relative flex justify-end">
           <div className="bg-primary h-[450px] w-96 rounded-md z-0 mt-5"></div>
           <Image
-            src={"/assets/healthy-food-one-1.jpg"}
+            src={"/assets/31s.png"}
             alt="features"
             width={438}
             height={580}
@@ -42,9 +42,12 @@ const OrganicFood = () => {
             produce. The live stock is then supplied to entire nation.{" "}
           </p>
 
-          <div className="py-8 flex flex-col lg:flex-row space-x-4  space-y-4 items-center ">
+          <div className="py-8 flex px-3 flex-col lg:flex-row space-x-4 ">
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">
-              <GiFarmTractor className="text-7xl " />
+              <p>
+                {" "}
+                <GiFarmTractor className="text-7xl " />
+              </p>
               <p className="text-white">Fresh Harvest</p>
             </div>
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">

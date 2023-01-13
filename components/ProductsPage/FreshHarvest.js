@@ -27,7 +27,7 @@ const Product1 = () => {
           <div className="  image-container">
             <div className="img-head1">
               <Image
-                src={"/assets/product-details-img-1.jpg"}
+                src={"/assets/25.png"}
                 alt="features"
                 layout="fill"
                 className="rounded-lg image"

@@ -7,7 +7,7 @@ import { TiTick } from "react-icons/ti";
 const Product4 = () => {
   return (
     <div className="lg:pt-32 pt-20 pb-20 bg-dark">
-      <div className={"service_page"}>
+      <div className={"service_page3"}>
         <div className="text-center text-white pt-16 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
             Home / AGventure
@@ -24,7 +24,7 @@ const Product4 = () => {
           <div className="  image-container">
             <div className="img-head1">
               <Image
-                src={"/assets/product-details-img-1.jpg"}
+                src={"/assets/22.png"}
                 alt="features"
                 layout="fill"
                 className="rounded-lg image"

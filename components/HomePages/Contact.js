@@ -35,11 +35,9 @@ const Contact = () => {
                 </span>
               </div>
               <div>
-                <p className="text-lg text-paraclr font-semibold">
-                  Have Question?
-                </p>
+                <p className="text-lg text-paraclr font-semibold">Email Id</p>
                 <h3 className="text-2xl text-fontclr font-bold">
-                  Free +92 (8800)-9850
+                  info@fintlivest.com
                 </h3>
               </div>
             </div>
@@ -52,26 +50,20 @@ const Contact = () => {
                 </span>
               </div>
               <div>
-                <p className="text-lg text-paraclr font-semibold">
-                  Write Email
-                </p>
-                <h3 className="text-2xl text-fontclr font-bold">
-                  needhelp@agrifint.com
-                </h3>
+                <p className="text-lg text-paraclr font-semibold">Phone No.</p>
+                <h3 className="text-2xl text-fontclr font-bold">9637778041</h3>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="text-2xl text-fontclr bg-primary  about-icon w-14 h-14 rounded-full flex items-center justify-center">
-                <span>
-                  {" "}
+              <div className="text-xl text-fontclr bg-primary  about-icon w-14 h-14 rounded-full flex items-center justify-center">
                   <MdLocationOn />
-                </span>
+              
               </div>
               <div>
                 <p className="text-lg text-paraclr font-semibold">Visit Now</p>
-                <h3 className="text-2xl text-fontclr font-bold">
-                  88 Broklyn Golden Street. USA
+                <h3 className="text-ld text-fontclr font-bold">
+                 Bengaluru, Karnataka 560102
                 </h3>
               </div>
             </div>
@@ -79,10 +71,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full lg:w-4/6 ">
-        <div className="bg-darkBg rounded-xl  w-full p-10">
+        <div className="bg-darkBg rounded-xl  w-full lg:py-10 py-5 px-5">
           <form>
             <div className="flex flex-col  items-center  gap-5">
-              <div className="flex flex-col lg:flex-row items-center px-12 pt-12 gap-5 w-full ">
+              <div className="flex flex-col lg:flex-row items-center lg:px-12  pt-12 gap-5 w-full ">
                 <input
                   type="text"
                   placeholder="Your Name"
@@ -94,7 +86,7 @@ const Contact = () => {
                   className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
                 />
               </div>
-              <div className="flex flex-col lg:flex-row items-center px-12 gap-5 w-full">
+              <div className="flex flex-col lg:flex-row items-center lg:px-12 gap-5 w-full">
                 <input
                   type="text"
                   placeholder="Phone"
@@ -107,7 +99,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="px-12">
+            <div className="lg:px-12 ">
               <textarea
                 name=""
                 id=""

@@ -78,7 +78,7 @@ const Footer = () => {
                       <li>
                         <Link
                           className="font-semibold hover:text-primary  block pb-2"
-                          href="#"
+                          href="/about"
                         >
                           About Us
                         </Link>
@@ -86,24 +86,15 @@ const Footer = () => {
                       <li>
                         <Link
                           className="font-semibold hover:text-primary block pb-2"
-                          href="#"
+                          href="/product1"
                         >
                           Products
                         </Link>
                       </li>
-
                       <li>
                         <Link
                           className="font-semibold hover:text-primary block pb-2"
-                          href="#"
-                        >
-                          Pages
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="font-semibold hover:text-primary block pb-2"
-                          href="#"
+                          href="/shop"
                         >
                           Shop
                         </Link>
@@ -111,7 +102,7 @@ const Footer = () => {
                       <li>
                         <Link
                           className="font-semibold hover:text-primary block pb-2"
-                          href="#"
+                          href="/contact"
                         >
                           Contact Us
                         </Link>
@@ -132,14 +123,15 @@ const Footer = () => {
                           Returns Calculator
                         </Link>
                       </li>
-                      <li>
+                     {/*  <li>
                         <Link
                           className="font-semibold hover:text-primary block pb-2"
                           href="#"
                         >
                           FAQs
                         </Link>
-                      </li>
+                      </li> */}
+                      
                       <li>
                         <Link
                           className="font-semibold hover:text-primary block pb-2"

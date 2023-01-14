@@ -32,10 +32,8 @@ const Product2 = () => {
                 className="rounded-lg image"
               />
             </div>
-            <div className="img-head">
-              <FaHandHoldingUsd />
-            </div>
-          </div>
+           
+                    </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
             Harvest Innovation TO Sowing Seeds
@@ -106,8 +104,8 @@ const SideBarCard2 = () => {
       <div className="img-head11 py-5">
         <FaHandHoldingUsd />
       </div>
-      <h1 className="py-3 text-lg">Lorem ipsum Lorem ipsum</h1>
-      <h1 className="py-1 text-xl ">+989875756343</h1>
+      <h1 className="py-3 text-lg">If there is a future, it will be green</h1>
+      <h1 className="py-1 text-xl ">+91 9637778041</h1>
     </div>
   );
 };

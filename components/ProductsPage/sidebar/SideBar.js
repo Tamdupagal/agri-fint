@@ -16,17 +16,17 @@ const SideBarCard = () => {
         </Link>
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl  ease-in duration-300 sideHead">
-        <Link href={"/products/product1"} className="flex items-center">
+        <Link href={"/products/product2"} className="flex items-center">
           <span>Sowing seeds</span>
         </Link>
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
-        <Link href={"/products/product1"} className="flex items-center">
+        <Link href={"/products/product3"} className="flex items-center">
         <span>Agro Gain</span>
         </Link>
         </li>
         <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
-        <Link href={"/products/product1"} className="flex items-center">
+        <Link href={"/products/product4"} className="flex items-center">
         <span>AGventure</span>
         </Link>
       </li>

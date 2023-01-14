@@ -33,9 +33,7 @@ const Product1 = () => {
                 className="rounded-lg image"
               />
             </div>
-            <div className="img-head">
-              <FaHandHoldingUsd />
-            </div>
+            
           </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
@@ -107,12 +105,14 @@ export default Product1;
 const SideBarCard2 = () => {
     return (
       <div className="bg-cardBg text-white text-xl text-center rounded-xl  py-10  px-5 font-semibold  w-93">
-        <h1 className="text-4xl py-5 px-5 uppercase">we are scaling our Agrifint product </h1>
+        <h1 className="text-4xl py-5 px-5 uppercase">
+          we are scaling our Agrifint product{" "}
+        </h1>
         <div className="img-head11 py-5">
           <FaHandHoldingUsd />
-            </div>
-            <h1 className="py-3 text-lg">Lorem ipsum Lorem ipsum</h1> 
-            <h1 className="py-1 text-xl ">+989875756343</h1>
+        </div>
+        <h1 className="py-3 text-lg">If there is a future, it will be green</h1>
+        <h1 className="py-1 text-xl ">+91 9637778041</h1>
       </div>
     );
 };

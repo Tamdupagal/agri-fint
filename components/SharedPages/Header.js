@@ -135,13 +135,7 @@ const Header = () => {
         }`}
       >
         <Link href={"/"}>
-          <Image
-            src={"/logo3.png"}
-            width={170}
-            height={0}
-            alt="logo"
-            
-          />
+          <Image src={"/logo3.png"} width={170} height={0} alt="logo" />
           {/* <h2 className='text-3xl font-bold  '>AgroFint</h2> */}
         </Link>
 
@@ -156,13 +150,13 @@ const Header = () => {
                 {" "}
                 <BsEnvelope className="text-yellow" />{" "}
                 <span className="text-fontclr hover:text-yellow">
-                  needhelp@agrifint.com
+                  info@fintlivest.com
                 </span>
               </p>
               <p className="flex items-center gap-2">
                 {" "}
                 <GoLocation className="text-yellow" />{" "}
-                <span>MG Road Mumbai 400543 India</span>
+                <span>Bengaluru, Karnataka 560102,  India </span>
               </p>
             </div>
             <div className="flex items-center gap-3 mr-10">
@@ -172,9 +166,9 @@ const Header = () => {
               <BsInstagram className="text-fontclr hover:text-yellow" />
             </div>
           </div>
-          <ul className="hidden px-24  lg:flex lg:flex-row justify-between items-center gap-10 text-xl font-semibold ">
-            {memuItems}|
-            <div className="flex items-center gap-10 text-2xl">
+          <ul className="hidden px-24  lg:flex lg:flex-row justify-between items-center  text-xl font-semibold ">
+            {memuItems}
+            {/* <div className="flex items-center gap-10 text-2xl">
               <Link href={"#"} className="text-fontclr hover:text-yellow">
                 <BsSearch />
               </Link>
@@ -182,12 +176,13 @@ const Header = () => {
                 <BsCart3 />
               </Link>
             </div>
+  */}{" "}
           </ul>
         </div>
 
         <div className={`   ${navbar ? "hidden" : " hidden lg:block"}`}>
           <li className="icon facebook">
-            <span className="tooltip">+9988-5455445</span>
+            <span className="tooltip">+91 9637778041</span>
             <span>
               <AiFillPhone />
             </span>
@@ -209,7 +204,7 @@ const Header = () => {
 
       {open ? (
         <div className="bg-dark  rounded w-full  py-3 z-10 fixed mt-20">
-          <ul className=" lg:hidden flex flex-col items-start gap-5 pt-20 px-5 text-base	 ">
+          <ul className=" lg:hidden flex flex-col  items-center pb-12 gap-8 pt-12 px-5 text-lg	 ">
             {memuItems}
           </ul>
         </div>

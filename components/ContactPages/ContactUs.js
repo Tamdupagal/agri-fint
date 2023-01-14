@@ -16,7 +16,7 @@ const ContactUs = () => {
   return (
     <div>
       <div className="lg:pt-32 pt-10 bg-dark  ">
-        <div className={"service_page"}>
+        <div className={"contact_page"}>
           <div className="text-center text-white pt-24 ">
             <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
               Home / ContactUs
@@ -33,7 +33,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="text-primary">Have Question?</h1>
-              <h1>Free +98664646453</h1>
+              <h1>Free +91 9637778041</h1>
             </div>
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-2">
@@ -42,7 +42,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="text-primary">Write Email</h1>
-              <h1>needhelp@agrifint.com</h1>
+              <h1>info@fintlivest.com</h1>
             </div>
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-2">
@@ -51,7 +51,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="text-primary">Visit Office</h1>
-              <h1>30 broklyon Golden street USA.</h1>
+              <h1>Bengaluru, Karnataka 560102.</h1>
             </div>
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-2">

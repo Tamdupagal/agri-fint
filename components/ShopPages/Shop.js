@@ -3,7 +3,7 @@ import React from "react";
 const Shop = () => {
   return (
     <div className="lg:pt-32 pt-20 pb-20 bg-dark">
-      <div className={"service_page"}>
+      <div className={"shop_page"}>
         <div className="text-center text-white pt-24 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
             Home / Shop{" "}

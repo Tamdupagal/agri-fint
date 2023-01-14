@@ -77,6 +77,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 .service_page3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/assets/banner7.png");
@@ -89,6 +91,32 @@
   justify-content: center;
   align-items: center;
 }
+
+.contact_page {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/assets/main-slider-1-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop_page {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/assets/shp.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Banner */
 .banner-slide {
@@ -358,7 +386,7 @@
 
 .banner-slide4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://layerdrops.com/agrionhtml/main-html/assets/images/backgrounds/page-header-bg.jpg");
+    url("/assets/11s.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -368,7 +396,7 @@
 }
 
 .banner-slide5 {
-  background: url("https://layerdrops.com/agrionhtml/main-html/assets/images/backgrounds/provide-one-bg.jpg");
+  background: url("/assets/29.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

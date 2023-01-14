@@ -42,12 +42,9 @@ const OrganicFood = () => {
             produce. The live stock is then supplied to entire nation.{" "}
           </p>
 
-          <div className="py-8 flex px-3 flex-col lg:flex-row space-x-4 ">
+          <div className="py-8 flex px-3 flex-col lg:flex-row space-x-4 space-y-5 ">
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">
-              <p>
-                {" "}
-                <GiFarmTractor className="text-7xl " />
-              </p>
+                <GiFarmTractor className="text-7xl " /> 
               <p className="text-white">Fresh Harvest</p>
             </div>
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">

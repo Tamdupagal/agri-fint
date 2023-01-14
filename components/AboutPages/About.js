@@ -15,16 +15,16 @@ function About() {
         <div className="mt-5 lg:px-10 bg-dark text-fontclr  flex flex-col xl:flex-row justify-around gap-10 relative">
           <div className="md:grid md:grid-rows-2 md:grid-flow-col gap-10 justify-center flex flex-col xl:w-1/2">
             <img
-              className="row-span-1 rounded w-full h-full"
-              src="https://layerdrops.com/agrionhtml/main-html/assets/images/resources/about-three-img-1.jpg"
+              className="row-span-1 rounded w-full h-full" alt="images"
+              src="/assets/about-one-img-2.jpg"
             />
             <img
               className="col-span-1 rounded w-full h-full"
-              src="https://layerdrops.com/agrionhtml/main-html/assets/images/resources/about-three-img-2.jpg"
+              src="/assets/40s.png"
             />
             <img
               className="row-span-2 rounded w-full h-full"
-              src="https://layerdrops.com/agrionhtml/main-html/assets/images/resources/about-three-img-3.jpg"
+              src="/assets/4s.png"
             />
           </div>
           <div className="xl:w-1/2 relative ">

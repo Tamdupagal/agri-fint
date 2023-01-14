@@ -92,7 +92,7 @@ const ContactUs = () => {
         </div>
         <div className="text-white text-center pt-20 ">
           <h1 className="text-primary text-xl py-3">Write a Message</h1>
-          <p className="text-white text-5xl uppercase  ">
+          <p className="text-white text-5xl px-2  uppercase  ">
             Always here to help you
           </p>
           <div className="inline-block py-3">

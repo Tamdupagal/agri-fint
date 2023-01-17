@@ -29,9 +29,7 @@ const Banner = () => {
         }}
         effect={"fade"}
         direction={"vertical"}
-        pagination={{
-          clickable: false,
-        }}
+       
         modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper"
       >

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillPhone, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiFillLinkedin, AiFillPhone, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import {
   BsCart3,
   BsEnvelope,
@@ -14,20 +14,20 @@ import {
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 
-  // className={ `rounded-md  ${ navbar ? "hidden" : "flex" }` }
-          
+// className={ `rounded-md  ${ navbar ? "hidden" : "flex" }` }
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
-    const changeNav = () => {
-        // console.log(window.scrollY)
-        if (window.scrollY >= 50) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
-    };
+  const changeNav = () => {
+    // console.log(window.scrollY)
+    if (window.scrollY >= 50) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  };
 
 
   useEffect(() => {
@@ -130,9 +130,8 @@ const Header = () => {
   return (
     <div>
       <header
-        className={`bg-dark text-fontclr w-full px-6 lg:px-20 pt-3 pb-3  flex  items-center justify-between gap-20  shadow-lg   z-50 ease-in duration-300 fixed  ${
-          navbar ? "h-20" : "h-20 lg:h-36"
-        }`}
+        className={`bg-dark text-fontclr w-full px-6 lg:px-20 pt-3 pb-3  flex  items-center justify-between gap-20  shadow-lg   z-50 ease-in duration-300 fixed  ${navbar ? "h-20" : "h-20 lg:h-36"
+          }`}
       >
         <Link href={"/"}>
           <Image src={"/logo3.png"} width={170} height={0} alt="logo" />
@@ -141,9 +140,8 @@ const Header = () => {
 
         <div className="lg:flex flex-col w-full gap-4 hidden ">
           <div
-            className={`flex items-center justify-between bg-cardBg w-full rounded-full h-12 ${
-              navbar ? "hidden" : "flex"
-            }`}
+            className={`flex items-center justify-between bg-cardBg w-full rounded-full h-12 ${navbar ? "hidden" : "flex"
+              }`}
           >
             <div className="flex items-center gap-4 ml-10 text-sm	 ">
               <p className="flex items-center gap-2">
@@ -160,10 +158,15 @@ const Header = () => {
               </p>
             </div>
             <div className="flex items-center gap-3 mr-10">
-              <BsTwitter className="text-fontclr hover:text-yellow" />
-              <BsFacebook className="text-fontclr hover:text-yellow" />
-              <BsTelegram className="text-fontclr hover:text-yellow" />
-              <BsInstagram className="text-fontclr hover:text-yellow" />
+              <Link href={"#"}><BsTwitter className="text-fontclr hover:text-yellow" /></Link>
+              <Link href={"#"}><BsFacebook className="text-fontclr hover:text-yellow" /></Link>
+              <Link href={"#"}><BsTelegram className="text-fontclr hover:text-yellow" /></Link>
+              <Link href={"#"}><BsInstagram className="text-fontclr hover:text-yellow" /></Link>
+              <Link href={"#"}><AiFillLinkedin className="text-fontclr hover:text-yellow" /></Link>
+
+
+
+
             </div>
           </div>
           <ul className="hidden px-24  lg:flex lg:flex-row justify-between items-center  text-xl font-semibold ">

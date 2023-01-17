@@ -6,7 +6,7 @@ import { accordionData } from '../../public/homeData';
 
 const StartSteps = () => {
     return (
-        <div className='px-6 lg:px-36 bg-dark text-fontclr  py-14'>
+        <div className='px-6 lg:px-48 bg-dark text-fontclr  py-14'>
             <div className='flex flex-col items-center text-center'>
                 <p className='text-xl font-semibold text-primary capitalize'>How To Get Started?</p>
                 <h2 className='text-3xl lg:text-5xl my-3 uppercase'>Start investing in 4 simple steps</h2>

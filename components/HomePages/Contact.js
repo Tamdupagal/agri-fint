@@ -109,7 +109,7 @@ const Contact = () => {
                 className="bg-dark text-paraclr px-10 w-full py-5 rounded-lg my-8"
               ></textarea>
             </div>
-            <Button>Send a Message</Button>
+            <button className="main-btn ml-0 lg:ml-10">Send a Message</button>
           </form>
         </div>
       </div>

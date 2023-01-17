@@ -78,34 +78,46 @@ const SliderBar = () => {
 
     const getPackage = calcolatorData.find(data => value === data.value);
     const { packages, payout, rate, amount, img } = getPackage;
-    const getTakeaway = (parseInt(amount) + parseInt((amount * (10 / 100))))
+    const getTakeaway = (parseInt(amount) + parseInt((amount * (10 / 100))));
+
+
+    const bankFdProfit = (parseInt(getTakeaway) + parseInt((getTakeaway * (5 / 100))));
+    const bankFdTaxs = (parseInt(getTakeaway) - parseInt((getTakeaway * (95 / 100))));
+
+    const bondProfit = (parseInt(getTakeaway) + parseInt((getTakeaway * (8 / 100))));
+    const bondTaxs = (parseInt(getTakeaway) - parseInt((getTakeaway * (90 / 100))));
+
+    const mutualFundProfit = (parseInt(getTakeaway) + parseInt((getTakeaway * (10 / 100))));
+    const mutualFundTaxs = (parseInt(getTakeaway) - parseInt((getTakeaway * (92 / 100))));
+
+
 
     console.log(getTakeaway);
 
     const data = {
-        labels: ['Bank FD', 'Bond',  'Mutual Fund', 'Agrifint'],
+        labels: ['Bank FD', 'Bond', 'Mutual Fund', 'Agrifint'],
         datasets: [{
             label: 'Profits',
-            data: [1800, 3000, 3600, 3000,],
+            data: [bankFdProfit, bondProfit, mutualFundProfit, getTakeaway],
             backgroundColor: [
                 '#1F6306',
-                
+
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
-                
+
             ],
         },
         {
             label: 'Taxs',
-            data: [180,300, 360, 0],
+            data: [bankFdTaxs, bondTaxs, mutualFundTaxs, ""],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                
+
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
-                
+
             ],
         }]
     }
@@ -120,7 +132,7 @@ const SliderBar = () => {
                 <div className='h-20'>
                     <Box display="flex" flexDirection="column"  >
                         <Slider
-                            style={{ width: "320px",height:"20px", fontSize: "20px" }}
+                            style={{ width: "320px", height: "20px", fontSize: "20px" }}
                             min={0}
                             max={100}
                             step={17}

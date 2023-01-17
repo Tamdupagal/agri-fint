@@ -138,4 +138,71 @@ export const accordionData = [
     details: "Automate your earnings with assured return at scheduled dates.",
     img: "/assets/steps/step4.png"
   },
+];
+
+
+export const calcolatorData = [
+  {
+    id: 1,
+    value:0,
+    packages: "Baby Farming",
+    payout: "Quarterly",
+    rate: 10,
+    amount: "5000",
+    img: "/assets/Baby Farming.svg"
+  },
+  {
+    id: 2,
+    value:17,
+    packages: "Baby Farming",
+    payout: "Quarterly",
+    rate: 10,
+    amount: "10000",
+    img: "/assets/Baby Farming.svg"
+  },
+  {
+    id: 3,
+    value:34,
+    packages: "Planty Returns",
+    payout: "Quarterly",
+    rate: 12,
+    amount: "20000",
+    img: "/assets/Planty Returns.svg"
+  },
+  {
+    id: 4,
+    value:51,
+    packages: "Planty Returns",
+    payout: "Quarterly",
+    rate: 12,
+    amount: "40000",
+    img: "/assets/Planty Returns.svg"
+  },
+  {
+    id: 5,
+    value:68,
+    packages: "Harvest Premium",
+    payout: "Quarterly",
+    rate: 16,
+    amount: "200000",
+    img: "/assets/Harvest Premium.svg"
+  },
+  {
+    id: 6,
+    value:85,
+    packages: "Banyan Tree",
+    payout: "Half Yearly",
+    rate: 17,
+    amount: "1000000",
+    img: "/assets/Banyan Tree.svg"
+  },
+  {
+    id: 7,
+    value:100,
+    packages: "Banyan Tree",
+    payout: "Half Yearly",
+    rate: 17,
+    amount: "2000000",
+    img: "/assets/Banyan Tree.svg"
+  },
 ]

@@ -15,7 +15,7 @@ const Success = () => {
                 <Image src={"/assets/section-title-icon-1.png"} width={54} height={21} alt="title icon" />
             </div>
 
-            <div className='flex flex-col lg:flex-row  items-center justify-between gap-5 w-full mb-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 w-full mb-10 ml-0 lg:ml-20'>
                 <div className="flex items-center  gap-5 w-full">
                     <Image src={"/assets/investment.svg"} alt={"success"} width={100} height={50} />
                     <div>

@@ -5,7 +5,7 @@ import { servicesData } from '../../public/homeData';
 
 const Services = () => {
     return (
-      <div className=" px-6 lg:px-36 bg-darkBg  text-fontclr  py-20 services-bg ">
+      <div className=" px-6 lg:px-36 bg-darkBg  text-fontclr  py-14 services-bg ">
         <div className="flex flex-col items-center gap-3">
           <p className="text-lg font-semibold text-primary">
             Invest in nature’s lap

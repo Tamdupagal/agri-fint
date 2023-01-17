@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "../components/HomePages/Banner";
+import Calculator from "../components/HomePages/Calculator";
 import Contact from "../components/HomePages/Contact";
 import Features from "../components/HomePages/Features";
 import OrganicFood from "../components/HomePages/OrganicFood";
@@ -27,6 +28,7 @@ export default function Home() {
         <Features />
         <Services />
         <StartSteps />
+        <Calculator />
         <Testimonial />
         <Success />
         <Projects />

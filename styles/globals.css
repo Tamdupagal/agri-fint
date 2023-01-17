@@ -450,3 +450,28 @@
     --animate-delay: 2s;
 
 }
+
+
+
+/* Calculator */
+
+datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
+
+.MuiSlider-track {
+  height: 5px !important;
+}

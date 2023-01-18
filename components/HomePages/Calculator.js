@@ -126,8 +126,7 @@ const SliderBar = () => {
               marks={customMarks}
               onChange={changeValue}
               getAriaValueText={getText}
-              className=" slider-white text-darkBg MuiSlider-markLabels"
-              color="primary"
+              className=" slider-white "
             />
           </Box>
         </div>

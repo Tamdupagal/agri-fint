@@ -32,8 +32,7 @@ const Product2 = () => {
                 className="rounded-lg image"
               />
             </div>
-           
-                    </div>
+          </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
             Harvest Innovation TO Sowing Seeds

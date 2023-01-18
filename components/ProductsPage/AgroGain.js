@@ -28,11 +28,10 @@ const Product3 = () => {
                 alt="features"
                 layout="fill"
                 className="rounded-lg image"
+                
               />
             </div>
-            
           </div>
-
           <h1 className="py-2 text-4xl font-bold text-white ">
             Harvest Innovation TO Agro Gain
           </h1>

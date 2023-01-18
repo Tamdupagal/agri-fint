@@ -42,44 +42,44 @@ export const servicesData = [
 export const testimonialData = [
   {
     id: 101,
-    name: "Sarah Albert",
+    name: "Amiya",
     comment:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-    designation: "Customer",
-    img: "/assets/testimonials/testimonial-1-1.jpg",
+      "The returns are much higher than the FD returns. Safe and amazing investment. Already recommended to a lot of my friends. Satisfied with the prompt response of the team for all my queries.",
+    designation: "Senior P Manager, Airtel Digital",
+    img: "/assets/testimonials/t1.jpg",
   },
   {
     id: 102,
-    name: "Kevin Martin",
+    name: "Ayurshi Sinha",
     comment:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-    designation: "Customer",
-    img: "/assets/testimonials/testimonial-1-2.jpg",
+      "The returns are much higher than the FD returns. Safe and amazing investment. Already recommended to a lot of my friends. Satisfied with the prompt response of the team for all my queries.",
+    designation: "Senior Research Associate",
+    img: "/assets/testimonials/t2.jpg",
   },
   {
     id: 103,
-    name: "Aleesha Brown",
+    name: "Shachi surabhi",
     comment:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-    designation: "Customer",
-    img: "/assets/testimonials/testimonial-1-3.jpg",
+      "The returns i have received till now, makes me want to invest more. The farmlands too are designed in a way that reflects good take care.",
+    designation: "Senior Tax Consultant, EY",
+    img: "/assets/testimonials/t3.jpg",
   },
-  {
-    id: 104,
-    name: "Mike Hardson",
-    comment:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-    designation: "Customer",
-    img: "/assets/testimonials/testimonial-1-4.jpg",
-  },
-  {
-    id: 105,
-    name: "Jolie Micheal",
-    comment:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-    designation: "Customer",
-    img: "/assets/testimonials/testimonial-1-5.jpg",
-  },
+  // {
+  //   id: 104,
+  //   name: "Mike Hardson",
+  //   comment:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
+  //   designation: "Customer",
+  //   img: "/assets/testimonials/testimonial-1-4.jpg",
+  // },
+  // {
+  //   id: 105,
+  //   name: "Jolie Micheal",
+  //   comment:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
+  //   designation: "Customer",
+  //   img: "/assets/testimonials/testimonial-1-5.jpg",
+  // },
 ];
 
 export const projectsData = [

@@ -68,7 +68,7 @@ const TestimonialCard = ({ singleTesti }) => {
     const { name, img, comment, designation } = singleTesti;
     return (
         <div className='relative p-10'>
-            <div className='text-paraclr bg-dark border-[1px] w-96 h-[300px]  border-cardBg hover:border-primary p-8 rounded-lg '>
+            <div className='text-paraclr bg-dark border-[1px] w-96 h-[350px]  border-cardBg hover:border-primary p-8 rounded-lg '>
                 <Image src={img} width={96} height={96} alt="title icon" className='rounded-full absolute top-0' />
                 <div className='text-start text-lg pt-14 pb-10'>
                     <p>{comment}</p>

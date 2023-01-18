@@ -134,7 +134,7 @@ const SliderBar = () => {
           <div className="h-20 text-white">
             <Box display="flex" flexDirection="column" className="">
               <Slider
-                style={{ width: "320px", height: "20px", fontSize: "30px" }}
+                style={{ width: "320px", height: "20px", fontSize: "25px" }}
                 min={0}
                 max={100}
                 step={17}

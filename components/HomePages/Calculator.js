@@ -45,7 +45,7 @@ const Calculator = () => {
     <div className="px-6 lg:px-36 bg-dark text-fontclr  py-10 ">
       <div className="flex flex-col items-center text-center">
         <p className="text-xl font-semibold text-primary capitalize">
-          CALCULATE YOUR RETURNS ON INVESTMENT
+          CALCULATE YOUR RETURNS ON INVESTMENT1
         </p>
         <h2 className="text-3xl lg:text-5xl my-3 uppercase">
           Estimate your Earnings before Investing

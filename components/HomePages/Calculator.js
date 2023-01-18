@@ -89,7 +89,7 @@ const SliderBar = () => {
   const mutualFundTaxs =
     parseInt(getTakeaway) - parseInt(getTakeaway * (92 / 100));
 
-  console.log(getTakeaway);
+  // console.log(getTakeaway);
 
   const data = {
     labels: ["Bank FD", "Bond", "Mutual Fund", "Agrifint"],

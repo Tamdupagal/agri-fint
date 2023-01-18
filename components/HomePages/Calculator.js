@@ -116,7 +116,7 @@ const SliderBar = () => {
           Investment Amount <span className="text-yellow">₹{amount}</span>
         </h2>
         <div className="h-20 ">
-          <Box display="flex" flexDirection="column" sx={{ color: "#fff" }}>
+          <Box display="flex" flexDirection="column">
             <Slider
               style={{ width: "320px", height: "20px", fontSize: "26px" }}
               min={0}

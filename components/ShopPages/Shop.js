@@ -12,76 +12,76 @@ const Shop = () => {
         </div>
       </div>
       <div className="lg:px-48 px-4 text-base text-white py-10  text-center ">
-        <div class="container flex justify-center mx-auto">
-          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-white ">
-              <thead class="text-xs text-white uppercase bg-primary ">
+        <div className="container flex justify-center mx-auto">
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left text-white ">
+              <thead className="text-xs text-white uppercase bg-primary ">
                 <tr>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Products
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Fresh Harvest
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Sowing Seeds
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Agro Gain
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Agventure
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-cardBg border-b  hover:bg-primary ">
+                <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium whitespace-nowrap text-white"
+                    className="px-6 py-4 font-medium whitespace-nowrap text-white"
                   >
                     Unit Investment (INR)
                   </th>
-                  <td class="px-6 py-4">5000 p.m.</td>
-                  <td class="px-6 py-4">20000</td>
-                  <td class="px-6 py-4">200000</td>
-                  <td class="px-6 py-4 text-right">1000000 </td>
+                  <td className="px-6 py-4">5000 p.m.</td>
+                  <td className="px-6 py-4">20000</td>
+                  <td className="px-6 py-4">200000</td>
+                  <td className="px-6 py-4 text-right">1000000 </td>
                 </tr>
-                <tr class="bg-cardBg border-b  hover:bg-primary ">
+                <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium  whitespace-nowrap text-white"
+                    className="px-6 py-4 font-medium  whitespace-nowrap text-white"
                   >
                     ROI
                   </th>
-                  <td class="px-6 py-4">10%</td>
-                  <td class="px-6 py-4">12%</td>
-                  <td class="px-6 py-4">16% </td>
-                  <td class="px-6 py-4 text-right">18%</td>
+                  <td className="px-6 py-4">10%</td>
+                  <td className="px-6 py-4">12%</td>
+                  <td className="px-6 py-4">16% </td>
+                  <td className="px-6 py-4 text-right">18%</td>
                 </tr>
-                <tr class="bg-cardBg border-b  hover:bg-primary ">
+                <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium  whitespace-nowrap text-white"
+                    className="px-6 py-4 font-medium  whitespace-nowrap text-white"
                   >
                     Lockin
                   </th>
-                  <td class="px-6 py-4">12 months</td>
-                  <td class="px-6 py-4">12 months</td>
-                  <td class="px-6 py-4">12 months</td>
-                  <td class="px-6 py-4 text-right">18 months</td>
+                  <td className="px-6 py-4">12 months</td>
+                  <td className="px-6 py-4">12 months</td>
+                  <td className="px-6 py-4">12 months</td>
+                  <td className="px-6 py-4 text-right">18 months</td>
                 </tr>
-                <tr class="bg-cardBg   hover:bg-primary ">
+                <tr className="bg-cardBg   hover:bg-primary ">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium  whitespace-nowrap text-white"
+                    className="px-6 py-4 font-medium  whitespace-nowrap text-white"
                   >
                     Payout Frequency
                   </th>
-                  <td class="px-6 py-4">Quarterly</td>
-                  <td class="px-6 py-4">Quarterly</td>
-                  <td class="px-6 py-4">Quarterly</td>
-                  <td class="px-6 py-4 text-right">Quarterly</td>
+                  <td className="px-6 py-4">Quarterly</td>
+                  <td className="px-6 py-4">Quarterly</td>
+                  <td className="px-6 py-4">Quarterly</td>
+                  <td className="px-6 py-4 text-right">Quarterly</td>
                 </tr>
               </tbody>
             </table>

@@ -37,8 +37,6 @@ export const servicesData = [
   },
 ];
 
-
-
 export const testimonialData = [
   {
     id: 101,
@@ -60,7 +58,7 @@ export const testimonialData = [
     id: 103,
     name: "Shachi surabhi",
     comment:
-      "The returns i have received till now, makes me want to invest more. The farmlands too are designed in a way that reflects good take care.",
+      "The returns I have received so far from my investments have been very positive, which makes me want to invest even more in the future. Additionally, the farmlands that I have invested in are well-maintained.....",
     designation: "Senior Tax Consultant, EY",
     img: "/assets/testimonials/t3.jpg",
   },
@@ -117,92 +115,93 @@ export const accordionData = [
   {
     id: 222,
     header: "Create account and complete KYC",
-    details: "Sign up with username and password. Verify your KYC which includes Pan Card, Adhaar card & Bank account details.",
-    img: "/assets/steps/step-1.png"
+    details:
+      "Sign up with username and password. Verify your KYC which includes Pan Card, Adhaar card & Bank account details.",
+    img: "/assets/steps/step-1.png",
   },
   {
     id: 223,
     header: " Choose investment option",
-    details: "Select the plan best suited to you and select the number of units you want to invest in.",
-    img: "/assets/steps/step2.png"
+    details:
+      "Select the plan best suited to you and select the number of units you want to invest in.",
+    img: "/assets/steps/step2.png",
   },
   {
     id: 224,
     header: " Add money and invest",
     details: "Simply add money to Growpital Wallet, e-sign required documents.",
-    img: "/assets/steps/step3.png"
+    img: "/assets/steps/step3.png",
   },
   {
     id: 225,
     header: " Harvest your earnings ",
     details: "Automate your earnings with assured return at scheduled dates.",
-    img: "/assets/steps/step4.png"
+    img: "/assets/steps/step4.png",
   },
 ];
-
 
 export const calcolatorData = [
   {
     id: 1,
-    value:0,
+    value: 0,
     packages: "Baby Farming",
     payout: "Quarterly",
     rate: 10,
     amount: "5000",
-    img: "/assets/Baby Farming.svg"
+    img: "/assets/Baby Farming.svg",
   },
   {
     id: 2,
-    value:17,
+    value: 17,
     packages: "Baby Farming",
     payout: "Quarterly",
     rate: 10,
     amount: "10000",
-    img: "/assets/Baby Farming.svg"
+    img: "/assets/Baby Farming.svg",
   },
   {
     id: 3,
-    value:34,
+    value: 34,
     packages: "Planty Returns",
     payout: "Quarterly",
     rate: 12,
     amount: "20000",
-    img: "/assets/Planty Returns.svg"
+    img: "/assets/Planty Returns.svg",
   },
   {
     id: 4,
-    value:51,
+    value: 51,
     packages: "Planty Returns",
     payout: "Quarterly",
     rate: 12,
     amount: "40000",
-    img: "/assets/Planty Returns.svg"
+    img: "/assets/Planty Returns.svg",
   },
   {
     id: 5,
-    value:68,
+    value: 68,
     packages: "Harvest Premium",
     payout: "Quarterly",
     rate: 16,
     amount: "200000",
-    img: "/assets/Harvest Premium.svg"
+    img: "/assets/Harvest Premium.svg",
   },
   {
     id: 6,
-    value:85,
+    value: 85,
     packages: "Banyan Tree",
     payout: "Half Yearly",
     rate: 17,
     amount: "1000000",
-    img: "/assets/Banyan Tree.svg"
+    img: "/assets/Banyan Tree.svg",
   },
   {
     id: 7,
-    value:100,
+    value: 100,
     packages: "Banyan Tree",
     payout: "Half Yearly",
     rate: 17,
     amount: "2000000",
-    img: "/assets/Banyan Tree.svg"
+    img: "/assets/Banyan Tree.svg",
   },
-]
+];

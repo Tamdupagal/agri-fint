@@ -219,7 +219,7 @@ const Footer = () => {
 
             <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
               <span>
-                <Link href={"#"}>
+                <Link href={"https://www.facebook.com/Fintlivest/"}>
                   <FaFacebookF />
                 </Link>
               </span>
@@ -235,7 +235,11 @@ const Footer = () => {
 
             <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
               <span>
-                <Link href={"#"}>
+                <Link
+                  href={
+                    "https://instagram.com/wearefintlivest?igshid=Yzg5MTU1MDY="
+                  }
+                >
                   <AiOutlineInstagram />
                 </Link>
               </span>
@@ -243,7 +247,7 @@ const Footer = () => {
 
             <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
               <span>
-                <Link href={"#"}>
+                <Link href={"https://www.linkedin.com/company/76233333/admin/"}>
                   <AiFillLinkedin className="text-fontclr hover:text-yellow" />
                 </Link>
               </span>

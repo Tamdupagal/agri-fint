@@ -115,8 +115,8 @@ const SliderBar = () => {
         <h2 className="text-3xl lg:text-4xl font-bold h-20 text-center">
           Investment Amount <span className="text-yellow">₹{amount}</span>
         </h2>
-        <div className="h-20 text-white">
-          <Box display="flex" flexDirection="column" className="">
+        <div className="h-20 ">
+          <Box display="flex" flexDirection="column" sx={{ color: "#fff" }}>
             <Slider
               style={{ width: "320px", height: "20px", fontSize: "26px" }}
               min={0}
@@ -126,7 +126,7 @@ const SliderBar = () => {
               marks={customMarks}
               onChange={changeValue}
               getAriaValueText={getText}
-              className="text-white slider-white"
+              className=" slider-white text-darkBg MuiSlider-markLabels"
               color="primary"
             />
           </Box>

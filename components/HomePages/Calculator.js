@@ -126,74 +126,82 @@ const SliderBar = () => {
 
 
     return (
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-10 my-10'>
-            <div className='bg-darkBg text-white p-10 h-auto lg:h-[610px] rounded-lg w-full lg:w-1/2 flex flex-col items-center justify-center gap-5'>
-                <h2 className='text-3xl lg:text-4xl font-bold h-20 text-center'>Investment Amount <span className='text-yellow'>₹{amount}</span></h2>
-                <div className='h-20'>
-                    <Box display="flex" flexDirection="column"  >
-                        <Slider
-                            style={{ width: "320px", height: "20px", fontSize: "20px" }}
-                            min={0}
-                            max={100}
-                            step={17}
-                            value={value}
-                            marks={customMarks}
-                            onChange={changeValue}
-                            getAriaValueText={getText}
-                        />
-                    </Box>
-                </div>
+      <div className="flex flex-col text-white lg:flex-row items-center justify-between gap-10 my-10">
+        <div className="bg-darkBg text-white p-10 h-auto lg:h-[610px] rounded-lg w-full lg:w-1/2 flex flex-col items-center justify-center gap-5">
+          <h2 className="text-3xl lg:text-4xl font-bold h-20 text-center">
+            Investment Amount <span className="text-yellow">₹{amount}</span>
+          </h2>
+          <div className="h-20 text-white">
+            <Box display="flex" flexDirection="column" className="">
+              <Slider
+                style={{ width: "320px", height: "20px", fontSize: "30px" }}
+                min={0}
+                max={100}
+                step={17}
+                value={value}
+                marks={customMarks}
+                onChange={changeValue}
+                getAriaValueText={getText}
+                className="text-white slider-white"
+                color="primary"
+              />
+            </Box>
+          </div>
 
-                <div className='flex  flex-col lg:flex-row items-center gap-4 justify-between w-full'>
-                    <div className='flex items-center gap-2'>
-                        <Image src={'/assets/lock.svg'} width={24} height={24} alt={"lock"} />
-                        <h2 className='text-xl font-bold'>LOCK IN: 12 MONTHS</h2>
-                    </div>
-                    <div className='flex items-center gap-2'>
-                        <Image src={'/assets/sandwatch.svg'} width={24} height={24} alt={"lock"} />
-                        <h2 className='text-xl font-bold'>TENURE: 36 MONTHS</h2>
-                    </div>
-                </div>
+          <div className="flex  flex-col lg:flex-row items-center gap-4 justify-between w-full">
+            <div className="flex items-center gap-2">
+              <Image
+                src={"/assets/lock.svg"}
+                width={24}
+                height={24}
+                alt={"lock"}
+              />
+              <h2 className="text-xl font-bold">LOCK IN: 12 MONTHS</h2>
+            </div>
+            <div className="flex items-center gap-2">
+              <Image
+                src={"/assets/sandwatch.svg"}
+                width={24}
+                height={24}
+                alt={"lock"}
+              />
+              <h2 className="text-xl font-bold">TENURE: 36 MONTHS</h2>
+            </div>
+          </div>
 
-                <div className='flex items-center gap-2 my-5'>
-                    <Image src={img} width={37} height={27} alt={packages} />
-                    <h2 className='text-3xl text-yellow font-bold'>{packages}</h2>
-                </div>
+          <div className="flex items-center gap-2 my-5">
+            <Image src={img} width={37} height={27} alt={packages} />
+            <h2 className="text-3xl text-yellow font-bold">{packages}</h2>
+          </div>
 
-                <div className='flex  flex-col lg:flex-row items-center gap-4 justify-between w-full'>
-                    <div className='flex flex-col items-center justify-center'>
-                        <h3 className='text-4xl font-bold text-white'>{rate}%</h3>
-                        <p>ROI</p>
-                    </div>
-
-                    <div className='flex flex-col items-center justify-center'>
-                        <h3 className='text-4xl font-bold text-white'>{getTakeaway}</h3>
-                        <p>Takeaway</p>
-                    </div>
-
-                    <div className='flex flex-col items-center justify-center'>
-                        <h3 className='text-4xl font-bold text-white'>{payout}</h3>
-                        <p>Payout</p>
-                    </div>
-                </div>
-
-
+          <div className="flex  flex-col lg:flex-row items-center gap-4 justify-between w-full">
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-4xl font-bold text-white">{rate}%</h3>
+              <p>ROI</p>
             </div>
 
-
-
-            <div className='bg-darkBg text-white p-10 h-[400px] lg:h-[610px] rounded-lg w-full lg:w-1/2 flex flex-col items-center justify-center gap-5'>
-                <Bar
-                    data={data}
-                    width={400}
-                    height={200}
-                    options={{
-                        maintainAspectRatio: false
-                    }}
-                />
-
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-4xl font-bold text-white">{getTakeaway}</h3>
+              <p>Takeaway</p>
             </div>
 
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-4xl font-bold text-white">{payout}</h3>
+              <p>Payout</p>
+            </div>
+          </div>
         </div>
-    )
+
+        <div className="bg-darkBg text-white p-10 h-[400px] lg:h-[610px] rounded-lg w-full lg:w-1/2 flex flex-col items-center justify-center gap-5">
+          <Bar
+            data={data}
+            width={400}
+            height={200}
+            options={{
+              maintainAspectRatio: false,
+            }}
+          />
+        </div>
+      </div>
+    );
 }

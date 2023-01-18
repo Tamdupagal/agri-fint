@@ -17,7 +17,7 @@ const ContactUs = () => {
     <div>
       <div className="lg:pt-32 pt-10 bg-dark  ">
         <div className={"contact_page"}>
-          <div className="text-center text-white pt-24 ">
+          <div className="text-center text-white pt-20 ">
             <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
               Home / ContactUs
             </a>

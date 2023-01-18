@@ -98,7 +98,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 55vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -106,11 +106,11 @@
 }
 .shop_page {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/assets/shp.png");
+    url("/assets/file.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 55vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,4 +1,10 @@
-import { Box, Slider } from "@material-ui/core";
+import Slider from "@mui/material/Slider";
+
+import Box from "@mui/material/Box";
+// or
+// import { Box } from "@mui/material";
+// or
+// import { Slider } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import { calcolatorData } from "../../public/homeData";

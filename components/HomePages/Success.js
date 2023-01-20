@@ -51,9 +51,9 @@ const Success = () => {
             </div>
 
             <Button>Invest Now</Button>
-            <p className='text-xl lg:text-2xl mt-7 font-semibold text-center text-paraclr'>Subscribed 100% in 6 hours on Tyke Invest</p>
+           {/*  <p className='text-xl lg:text-2xl mt-7 font-semibold text-center text-paraclr'>Subscribed 100% in 6 hours on Tyke Invest</p>
             <p className='text-xl lg:text-2xl font-semibold text-center text-paraclr'>Trusted by investor community spread across 10+ countries and 150+ cities</p>
-
+ */}
         </div>
     );
 };

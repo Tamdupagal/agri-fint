@@ -30,8 +30,7 @@ const Contact = () => {
             <div className="flex items-center gap-4">
               <div className="text-2xl text-fontclr bg-primary  about-icon w-14 h-14 rounded-full flex items-center justify-center">
                 <span>
-                  {" "}
-                  <BsFillTelephoneFill />
+                  <BsEnvelopeFill />
                 </span>
               </div>
               <div>
@@ -46,7 +45,7 @@ const Contact = () => {
               <div className="text-2xl text-fontclr bg-primary  about-icon w-14 h-14 rounded-full flex items-center justify-center">
                 <span>
                   {" "}
-                  <BsEnvelopeFill />
+                  <BsFillTelephoneFill />
                 </span>
               </div>
               <div>
@@ -57,13 +56,12 @@ const Contact = () => {
 
             <div className="flex items-center gap-4">
               <div className="text-xl text-fontclr bg-primary  about-icon w-14 h-14 rounded-full flex items-center justify-center">
-                  <MdLocationOn />
-              
+                <MdLocationOn />
               </div>
               <div>
                 <p className="text-lg text-paraclr font-semibold">Visit Now</p>
                 <h3 className="text-ld text-fontclr font-bold">
-                 Bengaluru, Karnataka 560102
+                  Bengaluru, Karnataka 560102
                 </h3>
               </div>
             </div>
@@ -88,12 +86,12 @@ const Contact = () => {
               </div>
               <div className="flex flex-col lg:flex-row items-center lg:px-12 gap-5 w-full">
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Phone"
                   className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
                 />
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Subject"
                   className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
                 />

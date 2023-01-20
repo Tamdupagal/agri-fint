@@ -38,7 +38,6 @@ const Features = () => {
                     <div className='text-xl font-semibold flex flex-col justify-evenly gap-14'>
                         <p>Exit Fee</p>
                         <p>Delay</p>
-                        <p>Brokerage</p>
                     </div>
                 </div>
                 <Button className="mt-5">Invest Now</Button>

@@ -34,7 +34,6 @@
   padding: 5px;
   /* padding: 20px; */
   /* z-index:-1 */
-
 }
 
 .main-btn:hover {
@@ -78,7 +77,6 @@
   align-items: center;
 }
 
-
 .service_page3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/assets/banner7.png");
@@ -118,13 +116,11 @@
 }
 
 .slider-white {
-  color: #1F6306 !important;
-  
+  color: #1f6306 !important;
 }
-.slider-white > span{
-  color:#ffffff;
+.slider-white > span {
+  color: #ffffff;
 }
-
 
 /* Banner */
 .banner-slide {
@@ -445,21 +441,16 @@
   margin: auto;
 }
 
-
 /* animation section */
-.animate__animated.animate__slideInDown{
+.animate__animated.animate__slideInDown {
   --animate-duration: 4s;
-    --animate-delay: 2s;
-
+  --animate-delay: 2s;
 }
 
 .animate__animated .animate__slideOutUp {
   --animate-duration: 4s;
-    --animate-delay: 2s;
-
+  --animate-delay: 2s;
 }
-
-
 
 /* Calculator */
 
@@ -481,5 +472,6 @@ input[type="range"] {
 }
 
 .MuiSlider-track {
-  height: 5px !important;
+  height: 8px !important;
 }
+

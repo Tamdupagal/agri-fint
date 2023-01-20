@@ -62,14 +62,14 @@ export const testimonialData = [
     designation: "Senior Tax Consultant, EY",
     img: "/assets/testimonials/t3.jpg",
   },
-  // {
-  //   id: 104,
-  //   name: "Mike Hardson",
-  //   comment:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempora sit similique cum, quasi autem praesentium perspiciatis repellendus harum temporibus.",
-  //   designation: "Customer",
-  //   img: "/assets/testimonials/testimonial-1-4.jpg",
-  // },
+  {
+    id: 104,
+    name: "Ankit Chandra Rakshit",
+    comment:
+      "Agrifint helped me to invest in a lucrative sector by architecting a compelling investment plan that I was looking for. I believe that the level of commitment, detail and strategic thinking they have demonstrated shows more than competence in their area of expertise.",
+    designation: "Vice president",
+    img: "/assets/testimonials/t4.jpg",
+  },
   // {
   //   id: 105,
   //   name: "Jolie Micheal",

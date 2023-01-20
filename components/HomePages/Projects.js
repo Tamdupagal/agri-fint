@@ -27,9 +27,9 @@ const Projects = () => {
       <div className="px-6 lg:px-36  text-fontclr py-3 flex flex-col lg:flex-row gap-5 items-center">
         <div className="w-full lg:w-2/5 ">
           <div className="relative flex justify-end">
-            <div className="bg-primary h-[450px] w-96 rounded-md z-0 "></div>
+            <div className="bg-primary h-[250px] w-96 rounded-md z-0 "></div>
             <Image
-              src={"/assets/about-one-img-2.jpg"}
+              src={"/assets/zetta.jpg"}
               alt="features"
               width={438}
               height={580}

@@ -30,7 +30,7 @@ const Shop = () => {
                     Agro Gain
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Agventure
+                    <i>AG</i>venture
                   </th>
                 </tr>
               </thead>
@@ -42,8 +42,8 @@ const Shop = () => {
                   >
                     Unit Investment (INR)
                   </th>
-                  <td className="px-6 py-4">5000 p.m.</td>
-                  <td className="px-6 py-4">20000</td>
+                  <td className="px-6 py-4">5000</td>
+                  <td className="px-6 py-4">25000</td>
                   <td className="px-6 py-4">200000</td>
                   <td className="px-6 py-4 text-right">1000000 </td>
                 </tr>
@@ -78,8 +78,8 @@ const Shop = () => {
                   >
                     Payout Frequency
                   </th>
-                  <td className="px-6 py-4">Quarterly</td>
-                  <td className="px-6 py-4">Quarterly</td>
+                  <td className="px-6 py-4">Monthly</td>
+                  <td className="px-6 py-4">Monthly</td>
                   <td className="px-6 py-4">Quarterly</td>
                   <td className="px-6 py-4 text-right">Quarterly</td>
                 </tr>
@@ -121,12 +121,13 @@ const Shop = () => {
           </div>
           <div className="py-2 m-2 px-2  ">
             <p className="py-2 bg-cardBg  rounded-tl-lg rounded-tr-lg px-2">
-              High Yield farm
+              AGventure
             </p>
             <p className="py-2 bg-primary rounded-bl-lg rounded-br-lg px-2">
               Integrated farming is zero-waste procedure. This allows maximum
               utilisation of resources and increases efficiency of production.
-              Agventure of high returns with an efficient farming technique
+              <i>AG</i>venture of high returns with an efficient farming
+              technique
             </p>
           </div>
         </div>

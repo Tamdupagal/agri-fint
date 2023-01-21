@@ -22,12 +22,14 @@ const SideBarCard = () => {
       </li>
       <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
         <Link href={"/products/product3"} className="flex items-center">
-        <span>Agro Gain</span>
+          <span>Agro Gain</span>
         </Link>
-        </li>
-        <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
+      </li>
+      <li className=" hover:text-white text-paraclr  py-3 px-8 rounded-xl ease-in duration-300 sideHead">
         <Link href={"/products/product4"} className="flex items-center">
-        <span>AGventure</span>
+          <span>
+            <i>AG</i>venture
+          </span>
         </Link>
       </li>
     </div>

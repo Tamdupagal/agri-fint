@@ -10,9 +10,11 @@ const Product4 = () => {
       <div className={"service_page3"}>
         <div className="text-center text-white pt-16 ">
           <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-            Home / AGventure
+            Home / <i>AG</i>venture
           </a>
-          <h2 className="text-5xl font-bold tracking-widest py-3">AGventure</h2>
+          <h2 className="text-5xl font-bold tracking-widest py-3">
+            <i>AG</i>venture
+          </h2>
         </div>
       </div>
       <div className=" flex flex-col lg:flex-row items-start justify-between gap-10 pt-12  lg:pt-16 my-16 px-5 lg:px-48 ">
@@ -30,9 +32,9 @@ const Product4 = () => {
                 className="rounded-lg image"
               />
             </div>
-                      </div>
+          </div>
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Harvest Innovation TO AGventure
+            Harvest Innovation TO <i>AG</i>venture
           </h1>
           <p className="text-md leading-8 text-white py-5">
             Agriculture, as we know is the main livelihood of majority of

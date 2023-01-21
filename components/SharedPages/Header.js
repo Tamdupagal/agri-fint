@@ -99,7 +99,9 @@ const Header = () => {
                 className="block text-white font-bold text-base  hover:text-tomato dropdown cursor-pointer"
               >
                 <span className="flex flex-row items-center gap-2 text-paraclr hover:text-fontclr	">
-                  <span>AGventure</span>
+                  <span>
+                    <i>AG</i>venture
+                  </span>
                   <span>
                     <MdKeyboardArrowRight />
                   </span>

@@ -44,7 +44,7 @@ const OrganicFood = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full ">
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">
-                <GiFarmTractor className="text-7xl " /> 
+              <GiFarmTractor className="text-7xl " />
               <p className="text-white">Fresh Harvest</p>
             </div>
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">
@@ -57,7 +57,9 @@ const OrganicFood = () => {
             </div>
             <div className="p-8 flex flex-col items-center  rounded-xl border  border-gray-500 hover:border-primary   hover:bg-primary text-primary  hover:text-yellow">
               <FaHandHoldingUsd className="text-7xl " />
-              <p className="text-white">AGventure</p>
+              <p className="text-white">
+                <i>AG</i>venture
+              </p>
             </div>
           </div>
 

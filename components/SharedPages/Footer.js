@@ -7,11 +7,7 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { BsArrowUp, BsTwitter } from "react-icons/bs";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 import { GiFarmer } from "react-icons/gi";
 import { TbBrandTelegram } from "react-icons/tb";
@@ -87,7 +83,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-semibold hover:text-primary block pb-2"
-                        href="/product1"
+                        href="/products/product1"
                       >
                         Products
                       </Link>

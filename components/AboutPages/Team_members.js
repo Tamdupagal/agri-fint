@@ -96,7 +96,7 @@ function Team_members() {
 
         <div className="sm:flex sm:flex-col sm:justify-center py-5 relative rounded-full rounded-br-lg">
           <img
-            src="/assets/team3.jpg"
+            src="/assets/team22.jpg"
             alt="title icon"
             className="Team_member1 duration-500 rounded-full rounded-br-lg"
           />
@@ -119,7 +119,7 @@ function Team_members() {
         </div>
         <div className="sm:flex sm:flex-col py-5 sm:justify-center">
           <img
-            src="/assets/team22.jpg"
+            src="/assets/team3.jpg"
             alt="title icon"
             className="Team_member3  duration-500 rounded-full rounded-br-lg"
           />

@@ -25,7 +25,7 @@ const Banner = () => {
         loop={true}
         autoplay={{
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         effect={"fade"}
         direction={"vertical"}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Shop = () => {
@@ -121,7 +122,7 @@ const Shop = () => {
           </div>
           <div className="py-2 m-2 px-2  ">
             <p className="py-2 bg-cardBg  rounded-tl-lg rounded-tr-lg px-2">
-              AGventure
+              <i>AG</i>venture
             </p>
             <p className="py-2 bg-primary rounded-bl-lg rounded-br-lg px-2">
               Integrated farming is zero-waste procedure. This allows maximum
@@ -129,6 +130,86 @@ const Shop = () => {
               <i>AG</i>venture of high returns with an efficient farming
               technique
             </p>
+          </div>
+        </div>
+        <div>
+          <b>
+            <p className="py-3">Banks Details:</p>
+          </b>
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left text-white ">
+              <thead className="text-xs text-white uppercase bg-primary ">
+                <tr>
+                  <th scope="col" className="px-6 py-3 rounded-tl-xl">
+                    Account Name
+                  </th>
+                  <th scope="col" className="px-6 py-3 rounded-tr-xl">
+                    Account Number
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-cardBg border-b  hover:bg-primary ">
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium whitespace-nowrap text-white"
+                  >
+                    Fintlivest Service Pvt Ltd Escrow Account
+                  </th>
+                  <td className="px-6 py-4">00014407466918</td>
+                </tr>
+              </tbody>
+              <thead className="text-xs text-white uppercase bg-primary ">
+                <tr>
+                  <th scope="col" className="px-6 py-3">
+                    Email
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    Purpose
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-cardBg border-b  hover:bg-primary ">
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium whitespace-nowrap text-white"
+                  >
+                    Vidit@fintlivest.com
+                  </th>
+                  <td className="px-6 py-4">Payment</td>
+                </tr>
+              </tbody>
+              <thead className="text-xs text-white uppercase bg-primary ">
+                <tr>
+                  <th scope="col" className="px-6 py-3">
+                    IFSC
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    Start Date
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-cardBg hover:bg-primary ">
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium whitespace-nowrap text-white rounded-bl-xl"
+                  >
+                    RATN0000100
+                  </th>
+                  <td className="px-6 py-4 rounded-br-xl">21 Jul 2022</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="py-6  container flex justify-center mx-auto">
+            <Image
+              src={"/assets/qrcode.png"}
+              alt="qrcode"
+              width={300}
+              height={300}
+            />
           </div>
         </div>
       </div>

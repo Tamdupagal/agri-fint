@@ -38,7 +38,9 @@ const Footer = () => {
 
           <div className="w-full lg:w-1/3 flex items-center justify-center lg:justify-end">
             <button className="px-10 lg:px-20 py-3 lg:py-6 rounded-full bg-fontclr hover:bg-cardBg hover:text-white text-black font-bold text-xl">
+              <Link href={"/contact"}>
               Discover More
+              </Link>
             </button>
           </div>
         </div>
@@ -115,7 +117,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="font-semibold hover:text-primary block pb-2"
-                        href="#"
+                        href="/returnCalculator"
                       >
                         Returns Calculator
                       </Link>

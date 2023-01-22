@@ -3,8 +3,58 @@ import React from "react";
 import { BsCheck2, BsEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import Button from "../../utilities/Button";
+import { useState } from "react";
+import { sendContactForm } from "../../lib/api";
+import { Router } from "next/router";
+import { useRouter } from "next/router";
 
-const Contact = () => {
+
+const Contact = () =>
+{
+  
+   const initValues = {
+     name: "",
+     email: "",
+     phone: "",
+     subject: "",
+     message: "",
+   };
+
+   const initState = { values: initValues };
+   const router = useRouter();
+
+   const [state, setState] = useState(initState);
+   const { values, isLoading, error } = state;
+   // console.log(state);
+
+   const handleChange = ({ target }) =>
+     setState((prev) => ({
+       ...prev,
+       values: {
+         ...prev.values,
+         [target.name]: target.value,
+       },
+     }));
+
+   const onSubmit = async () => {
+     setState((prev) => ({
+       ...prev,
+       isLoading: true,
+     }));
+     // Router.push("/");
+     router.push("/thankyou");
+
+     try {
+       await sendContactForm(values);
+     } catch (error) {
+       setState((prev) => ({
+         ...prev,
+         isLoading: false,
+         error: error.message,
+       }));
+     }
+   };
+
   return (
     <div className="px-6 lg:px-36 bg-dark text-fontclr pt-24 lg:pt-40  py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
       <div className="w-full lg:w-2/6">
@@ -70,45 +120,68 @@ const Contact = () => {
       </div>
       <div className="w-full lg:w-4/6 ">
         <div className="bg-darkBg rounded-xl  w-full lg:py-10 py-5 px-5">
-          <form>
-            <div className="flex flex-col  items-center  gap-5">
-              <div className="flex flex-col lg:flex-row items-center lg:px-12  pt-12 gap-5 w-full ">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
-                />
+          <div className=" rounded-lg   w-full p-5  form-Contact">
+            {error && <h1 className="text-xl text-red">{error}</h1>}
+            <form className="form-Contact">
+              <div className="flex flex-col  items-center gap-3">
+                <div className="flex flex-col lg:flex-row items-center gap-3 w-full ">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.name}
+                    onChange={handleChange}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    name="email"
+                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone"
+                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.phone}
+                    onChange={handleChange}
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.subject}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
-              <div className="flex flex-col lg:flex-row items-center lg:px-12 gap-5 w-full">
-                <input
-                  type="number"
-                  placeholder="Phone"
-                  className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
-                />
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="bg-dark text-paraclr px-5 w-full py-5 rounded-lg"
-                />
-              </div>
-            </div>
-            <div className="lg:px-12 ">
               <textarea
-                name=""
                 id=""
                 cols="20"
+                name="message"
                 rows="10"
                 placeholder="Write a Message"
-                className="bg-dark text-paraclr px-10 w-full py-5 rounded-lg my-8"
+                value={values.message}
+                onChange={handleChange}
+                className="bg-[#0E2207] text-paraclr px-10 w-full py-5 rounded-lg my-4"
               ></textarea>
-            </div>
-            <button className="main-btn ml-0 lg:ml-10">Send a Message</button>
-          </form>
+              <div className="">
+                <button
+                  className="bg-primary text-white rounded-3xl px-3 py-3"
+                  onClick={onSubmit}
+                  isLoading={isLoading}
+                >
+                  Send a Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

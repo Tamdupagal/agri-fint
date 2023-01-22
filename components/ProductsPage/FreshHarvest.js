@@ -37,7 +37,7 @@ const Product1 = () => {
           </div>
 
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Harvest Innovation TO Fresh Harvest
+           Fresh Harvest
           </h1>
           <p className="text-md leading-8 text-white py-5">
             Harvesting is an art of gathering a ripe crop from the fields.

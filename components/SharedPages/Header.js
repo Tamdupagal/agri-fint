@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillLinkedin, AiFillPhone, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillPhone,
+  AiOutlineClose,
+  AiOutlineMenu,
+} from "react-icons/ai";
 import {
   BsCart3,
   BsEnvelope,
@@ -23,12 +28,11 @@ const Header = () => {
   const changeNav = () => {
     // console.log(window.scrollY)
     if (window.scrollY >= 50) {
-      setNavbar(true)
+      setNavbar(true);
     } else {
-      setNavbar(false)
+      setNavbar(false);
     }
   };
-
 
   useEffect(() => {
     changeNav();
@@ -38,12 +42,18 @@ const Header = () => {
 
   const memuItems = (
     <>
-      <li className="text-paraclr hover:text-fontclr  text-base	">
+      <li
+        className="text-paraclr hover:text-fontclr  text-base	"
+        onClick={() => setOpen(!open)}
+      >
         <Link href={"/"} className="flex items-center">
           <span>Home</span>
         </Link>
       </li>
-      <li className="text-paraclr hover:text-fontclr text-base	 ">
+      <li
+        className="text-paraclr hover:text-fontclr text-base	 "
+        onClick={() => setOpen(!open)}
+      >
         <Link href={"/about"} className="flex items-center">
           <span>About Us</span>
         </Link>
@@ -54,7 +64,10 @@ const Header = () => {
         </a>
         <div className="dropdown-menu  absolute h-auto hidden pt-6  pb-6">
           <ul className="flex flex-col bg-dark items-start gap-3  shadow px-5 py-8 w-64 rounded-lg text-xl">
-            <li className="py-2 head-hover-link px-5  ">
+            <li
+              className="py-2 head-hover-link px-5  "
+              onClick={() => setOpen(!open)}
+            >
               <Link
                 href={"/products/product1"}
                 className="block text-white font-bold text-base  hover:text-red dropdown cursor-pointer"
@@ -67,7 +80,10 @@ const Header = () => {
                 </span>
               </Link>
             </li>
-            <li className="py-2 head-hover-link px-5">
+            <li
+              className="py-2 head-hover-link px-5"
+              onClick={() => setOpen(!open)}
+            >
               <Link
                 href={"/products/product2"}
                 className="block text-white font-bold text-base  hover:text-tomato dropdown cursor-pointer"
@@ -80,7 +96,10 @@ const Header = () => {
                 </span>
               </Link>
             </li>
-            <li className="py-2 head-hover-link px-5">
+            <li
+              className="py-2 head-hover-link px-5"
+              onClick={() => setOpen(!open)}
+            >
               <Link
                 href={"/products/product3"}
                 className="block text-white font-bold text-base  hover:text-tomato dropdown cursor-pointer"
@@ -93,7 +112,10 @@ const Header = () => {
                 </span>{" "}
               </Link>
             </li>
-            <li className="py-2 head-hover-link px-5">
+            <li
+              className="py-2 head-hover-link px-5"
+              onClick={() => setOpen(!open)}
+            >
               <Link
                 href={"/products/product4"}
                 className="block text-white font-bold text-base  hover:text-tomato dropdown cursor-pointer"
@@ -117,12 +139,18 @@ const Header = () => {
           <span>Pages</span>
         </Link>
       </li> */}
-      <li className="text-paraclr hover:text-fontclr text-base	 ">
+      <li
+        className="text-paraclr hover:text-fontclr text-base	 "
+        onClick={() => setOpen(!open)}
+      >
         <Link href={"/shop"} className="flex items-center">
           <span>Shop</span>
         </Link>
       </li>
-      <li className="text-paraclr hover:text-fontclr text-base	 ">
+      <li
+        className="text-paraclr hover:text-fontclr text-base	 "
+        onClick={() => setOpen(!open)}
+      >
         <Link href={"/contact"} className="flex items-center">
           <span>Contact Us</span>
         </Link>
@@ -221,7 +249,7 @@ const Header = () => {
 
       {open ? (
         <div className="bg-dark  rounded w-full  py-3 z-10 fixed mt-20">
-          <ul className=" lg:hidden flex flex-col  items-center pb-12 gap-8 pt-12 px-5 text-lg	 ">
+          <ul className=" lg:hidden flex flex-col  items-center pb-12 gap-8 pt-12 px-5 text-lg ease-in		 ">
             {memuItems}
           </ul>
         </div>

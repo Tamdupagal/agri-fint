@@ -1,154 +1,132 @@
 import React from "react";
 // import Contact from '../HomePages/Contact'
 import Button from "../../utilities/Button";
-import {BsChatText} from 'react-icons/bs'
+import { BsChatText } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { BsArrowUp, BsTwitter } from "react-icons/bs";
 import Link from "next/link";
 import { AiFillHeart, AiOutlineInstagram } from "react-icons/ai";
 import { TbBrandTelegram } from "react-icons/tb";
-import { MdAttachEmail } from 'react-icons/md'
+import { MdAttachEmail } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
 import Image from "next/image";
-
+import { useState } from "react";
+import { sendContactForm } from "../../lib/api";
+import { Router } from "next/router";
+import { useRouter } from "next/router";
 
 const ContactUs = () => {
+  const initValues = {
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  };
+
+  const initState = { values: initValues };
+  const router = useRouter();
+
+  const [state, setState] = useState(initState);
+  const { values, isLoading, error } = state;
+  // console.log(state);
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    // Router.push("/");
+        router.push("/thankyou");
+
+    try {
+      await sendContactForm(values);
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
+  };
+
   return (
     <div>
-      <div className="lg:pt-32 pt-10 bg-dark  ">
-        <div className={"contact_page"}>
-          <div className="text-center text-white pt-20 ">
-            <a className="px-5 rounded-full About_btn text-xl p-1.5 " href="#">
-              Home / ContactUs
-            </a>
-            <h2 className="text-5xl font-bold tracking-widest py-3">
-              Contact Us
-            </h2>
-          </div>
-        </div>
-        <div className="text-white flex lg:flex-row flex-col justify-between	tracking-wider lg:px-40 px-5 gap-20 pt-10 ">
-          <div className="flex lg:flex-row flex-col items-center gap-2 ">
-            <div>
-              <BsChatText className="text-3xl" />
-            </div>
-            <div>
-              <h1 className="text-primary">Have Question?</h1>
-              <h1>Free +91 9637778041</h1>
-            </div>
-          </div>
-          <div className="flex lg:flex-row flex-col items-center gap-2">
-            <div>
-              <MdAttachEmail className="text-3xl" />
-            </div>
-            <div>
-              <h1 className="text-primary">Write Email</h1>
-              <h1>info@fintlivest.com</h1>
-            </div>
-          </div>
-          <div className="flex lg:flex-row flex-col items-center gap-2">
-            <div>
-              <FiMapPin className="text-3xl" />
-            </div>
-            <div>
-              <h1 className="text-primary">Visit Office</h1>
-              <h1>Bengaluru, Karnataka 560102.</h1>
-            </div>
-          </div>
-          <div className="flex lg:flex-row flex-col items-center gap-2">
-            <div className="flex items-center justify-center gap-3  mt-5">
-              <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
-                <span>
-                  <Link href={"#"}>
-                    <BsTwitter />
-                  </Link>
-                </span>
-              </div>
-
-              <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
-                <span>
-                  <Link href={"#"}>
-                    <FaFacebookF />
-                  </Link>
-                </span>
-              </div>
-
-              <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary   icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
-                <span>
-                  <Link href={"#"}>
-                    <TbBrandTelegram />
-                  </Link>
-                </span>
-              </div>
-
-              <div className="text-2xl  bg-darkBg hover:bg-fontclr text-white hover:text-primary  icon-bg w-10 h-10 rounded-full flex items-center justify-center mb-3 ">
-                <span>
-                  <Link href={"#"}>
-                    <AiOutlineInstagram />
-                  </Link>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="text-white text-center pt-20 ">
-          <h1 className="text-primary text-xl py-3">Write a Message</h1>
-          <p className="text-white text-5xl px-2  uppercase  ">
-            Always here to help you
-          </p>
-          <div className="inline-block py-3">
-            <Image
-              className=""
-              src={"/assets/section-title-icon-1.png"}
-              width={54}
-              height={21}
-              alt="title icon"
-            />
-          </div>
-        </div>
+            
         <div className=" pt-10 pb-10">
           <div className=" rounded-lg   w-full p-10 lg:w-1/2 form-Contact">
+            {error && <h1 className="text-xl text-red">{error}</h1>}
             <form className="form-Contact">
               <div className="flex flex-col  items-center gap-3">
                 <div className="flex flex-col lg:flex-row items-center gap-3 w-full ">
                   <input
                     type="text"
                     placeholder="Your Name"
+                    name="name"
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.name}
+                    onChange={handleChange}
                   />
                   <input
                     type="email"
                     placeholder="Email Address"
+                    name="email"
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
                   <input
                     type="text"
+                    name="phone"
                     placeholder="Phone"
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.phone}
+                    onChange={handleChange}
                   />
                   <input
-                    type="email"
+                    type="text"
+                    name="subject"
                     placeholder="Subject"
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                    value={values.subject}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
               <textarea
-                name=""
                 id=""
                 cols="20"
+                name="message"
                 rows="10"
                 placeholder="Write a Message"
+                value={values.message}
+                onChange={handleChange}
                 className="bg-[#0E2207] text-paraclr px-10 w-full py-5 rounded-lg my-4"
               ></textarea>
               <div className="">
-                <Button>Send a Message</Button>
+                <button
+                  className="bg-primary text-white rounded-3xl px-3 py-3"
+                  onClick={onSubmit}
+                  isLoading={isLoading}
+                >
+                  Send a Message
+                </button>
               </div>
             </form>
           </div>
         </div>
-      </div>
+    
     </div>
   );
 };

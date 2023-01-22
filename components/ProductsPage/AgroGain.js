@@ -33,7 +33,7 @@ const Product3 = () => {
             </div>
           </div>
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Harvest Innovation TO Agro Gain
+            Agro Gain
           </h1>
           <p className="text-md leading-8 text-white py-5">
             Trade in agro-food products has grown strongly over the last two

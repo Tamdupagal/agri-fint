@@ -17,33 +17,35 @@ const customMarks = [
     label: "5000",
     amount: 5000,
   },
+  // {
+  //   value: 20,
+  //   amount: 10000,
+  // },
   {
-    value: 17,
-    amount: 10000,
+    value: 33,
+    label: "25000",
+    amount: 25000,
   },
+  // {
+  //   value: 60,
+  //   amount: 40000,
+  // },
   {
-    value: 34,
-    label: "20000",
-    amount: 20000,
-  },
-  {
-    value: 51,
-    amount: 40000,
-  },
-  {
-    value: 68,
+    value: 66,
     label: "200000",
     amount: 200000,
   },
+
   {
-    value: 85,
+    value: 99,
+    label:"1000000",
     amount: 1000000,
   },
-  {
-    value: 100,
-    label: "2000000",
-    amount: 2000000,
-  },
+  // {
+  //   value: 100,
+  //   label: "2000000",
+  //   amount: 2000000,
+  // },
 ];
 
 const Calculator = () => {
@@ -81,21 +83,19 @@ const SliderBar = () => {
 
   const getPackage = calcolatorData.find((data) => value === data.value);
   const { packages, payout, rate, amount, img } = getPackage;
-  const getTakeaway = parseInt(amount) + parseInt(amount * (10 / 100));
-
+  const getTakeaway = parseInt(amount) + parseInt(amount * (rate / 100));
+ 
   const bankFdProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (5 / 100));
+    parseInt(getTakeaway) + parseInt(getTakeaway * (3 / 100));
   const bankFdTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (95 / 100));
 
-  const bondProfit = parseInt(getTakeaway) + parseInt(getTakeaway * (8 / 100));
+  const bondProfit = parseInt(getTakeaway) + parseInt(getTakeaway * (6 / 100));
   const bondTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (90 / 100));
 
   const mutualFundProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (10 / 100));
+    parseInt(getTakeaway) + parseInt(getTakeaway * (6 / 100));
   const mutualFundTaxs =
     parseInt(getTakeaway) - parseInt(getTakeaway * (92 / 100));
-
-  // console.log(getTakeaway);
 
   const data = {
     labels: ["Bank FD", "Bond", "Mutual Fund", "Agrifint"],
@@ -122,12 +122,12 @@ const SliderBar = () => {
           Investment Amount <span className="text-yellow">₹{amount}</span>
         </h2>
         <div className="h-20 ">
-          <Box display="flex" flexDirection="column">
+          <Box display="flex" flexDirection="column" className=" ">
             <Slider
-              style={{ width: "320px", height: "20px", fontSize: "26px" }}
+              style={{ width: "300px", height: "8px", fontSize: "26px" }}
               min={0}
-              max={100}
-              step={17}
+              max={99}
+              step={33}
               value={value}
               marks={customMarks}
               onChange={changeValue}

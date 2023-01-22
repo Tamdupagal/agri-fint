@@ -34,7 +34,7 @@ const Product4 = () => {
             </div>
           </div>
           <h1 className="py-2 text-4xl font-bold text-white ">
-            Harvest Innovation TO <i>AG</i>venture
+            <i>AG</i>venture
           </h1>
           <p className="text-md leading-8 text-white py-5">
             Agriculture, as we know is the main livelihood of majority of

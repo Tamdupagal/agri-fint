@@ -26,10 +26,10 @@ const Banner = () => {
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,
+          stopOnLast:true,
         }}
         effect={"fade"}
         direction={"vertical"}
-       
         modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper"
       >

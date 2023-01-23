@@ -29,7 +29,7 @@ const Banner = () => {
           stopOnLast:true,
         }}
         effect={"fade"}
-        direction={"vertical"}
+        direction={"horizontal"}
         modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper"
       >

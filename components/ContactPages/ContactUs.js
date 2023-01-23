@@ -28,7 +28,7 @@ const ContactUs = () => {
   const router = useRouter();
 
   const [state, setState] = useState(initState);
-  const { values, isLoading, error } = state;
+  const { values,  error } = state;
   // console.log(state);
 
   const handleChange = ({ target }) =>
@@ -43,90 +43,97 @@ const ContactUs = () => {
   const onSubmit = async () => {
     setState((prev) => ({
       ...prev,
-      isLoading: true,
-    }));
+         }));
     // Router.push("/");
-        router.push("/thankyou");
-
+    
     try {
       await sendContactForm(values);
     } catch (error) {
       setState((prev) => ({
         ...prev,
-        isLoading: false,
         error: error.message,
       }));
+      router.push("/thankyou");
     }
   };
 
   return (
     <div>
-            
-        <div className=" pt-10 pb-10">
-          <div className=" rounded-lg   w-full p-10 lg:w-1/2 form-Contact">
-            {error && <h1 className="text-xl text-red">{error}</h1>}
-            <form className="form-Contact">
-              <div className="flex flex-col  items-center gap-3">
-                <div className="flex flex-col lg:flex-row items-center gap-3 w-full ">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    name="name"
-                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
-                    value={values.name}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    name="email"
-                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
-                    value={values.email}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="Phone"
-                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
-                    value={values.phone}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
-                    value={values.subject}
-                    onChange={handleChange}
-                  />
-                </div>
+      <div className=" pt-10 pb-10">
+        <div className=" rounded-lg   w-full p-10 lg:w-1/2 form-Contact">
+          {error && <h1 className="text-xl text-red">{error}</h1>}
+          <form className="form-Contact">
+            <div className="flex flex-col  items-center gap-3">
+              <div className="flex flex-col lg:flex-row items-center gap-3 w-full ">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="name"
+                  className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                  value={values.name}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                  value={values.email}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-              <textarea
-                id=""
-                cols="20"
-                name="message"
-                rows="10"
-                placeholder="Write a Message"
-                value={values.message}
-                onChange={handleChange}
-                className="bg-[#0E2207] text-paraclr px-10 w-full py-5 rounded-lg my-4"
-              ></textarea>
-              <div className="">
-                <button
-                  className="bg-primary text-white rounded-3xl px-3 py-3"
-                  onClick={onSubmit}
-                  isLoading={isLoading}
-                >
-                  Send a Message
-                </button>
+              <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                  value={values.phone}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
+                  value={values.subject}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-            </form>
-          </div>
+            </div>
+            <textarea
+              id=""
+              cols="20"
+              name="message"
+              rows="10"
+              placeholder="Write a Message"
+              value={values.message}
+              onChange={handleChange}
+              required
+              className="bg-[#0E2207] text-paraclr px-10 w-full py-5 rounded-lg my-4"
+            ></textarea>
+            <div className="">
+              <button
+                className="bg-primary text-white rounded-3xl px-3 py-3 disabled:bg-cardBg"
+                onClick={onSubmit}
+                disabled={
+                  !values.name ||
+                  !values.email ||
+                  !values.phone ||
+                  !values.subject ||
+                  !values.message
+                }
+              >
+                Send a Message
+              </button>
+            </div>
+          </form>
         </div>
-    
+      </div>
     </div>
   );
 };

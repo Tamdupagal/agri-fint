@@ -8,52 +8,49 @@ import { sendContactForm } from "../../lib/api";
 import { Router } from "next/router";
 import { useRouter } from "next/router";
 
+const Contact = () => {
+  const initValues = {
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  };
 
-const Contact = () =>
-{
-  
-   const initValues = {
-     name: "",
-     email: "",
-     phone: "",
-     subject: "",
-     message: "",
-   };
+  const initState = { values: initValues };
+  const router = useRouter();
 
-   const initState = { values: initValues };
-   const router = useRouter();
+  const [state, setState] = useState(initState);
+  const { values, isLoading, error } = state;
+  // console.log(state);
 
-   const [state, setState] = useState(initState);
-   const { values, isLoading, error } = state;
-   // console.log(state);
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
 
-   const handleChange = ({ target }) =>
-     setState((prev) => ({
-       ...prev,
-       values: {
-         ...prev.values,
-         [target.name]: target.value,
-       },
-     }));
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: false,
+    }));
+    // Router.push("/");
 
-   const onSubmit = async () => {
-     setState((prev) => ({
-       ...prev,
-       isLoading: true,
-     }));
-     // Router.push("/");
-     router.push("/thankyou");
-
-     try {
-       await sendContactForm(values);
-     } catch (error) {
-       setState((prev) => ({
-         ...prev,
-         isLoading: false,
-         error: error.message,
-       }));
-     }
-   };
+    try {
+      await sendContactForm(values);
+      router.push("/thankyou");
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
+  };
 
   return (
     <div className="px-6 lg:px-36 bg-dark text-fontclr pt-24 lg:pt-40  py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -85,7 +82,10 @@ const Contact = () =>
               </div>
               <div>
                 <p className="text-lg text-paraclr font-semibold">Email Id</p>
-                <h3 className="text-2xl text-fontclr font-bold">
+                <h3
+                  className="text-2xl text-fontclr font-bold cursor-pointer"
+                  onClick={() => router.push("mailto:digitechladder@gmail.com")}
+                >
                   info@fintlivest.com
                 </h3>
               </div>
@@ -100,7 +100,12 @@ const Contact = () =>
               </div>
               <div>
                 <p className="text-lg text-paraclr font-semibold">Phone No.</p>
-                <h3 className="text-2xl text-fontclr font-bold">9637778041</h3>
+                <h3
+                  className="text-2xl text-fontclr font-bold cursor-pointer"
+                  href="tel:+91 9637778041"
+                >
+                  9637778041
+                </h3>
               </div>
             </div>
 
@@ -110,7 +115,7 @@ const Contact = () =>
               </div>
               <div>
                 <p className="text-lg text-paraclr font-semibold">Visit Now</p>
-                <h3 className="text-ld text-fontclr font-bold">
+                <h3 className="text-ld text-fontclr font-bold ">
                   Bengaluru, Karnataka 560102
                 </h3>
               </div>
@@ -127,6 +132,7 @@ const Contact = () =>
                 <div className="flex flex-col lg:flex-row items-center gap-3 w-full ">
                   <input
                     type="text"
+                    required
                     placeholder="Your Name"
                     name="name"
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
@@ -137,6 +143,7 @@ const Contact = () =>
                     type="email"
                     placeholder="Email Address"
                     name="email"
+                    required
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
                     value={values.email}
                     onChange={handleChange}
@@ -147,6 +154,7 @@ const Contact = () =>
                     type="text"
                     name="phone"
                     placeholder="Phone"
+                    required
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
                     value={values.phone}
                     onChange={handleChange}
@@ -155,6 +163,7 @@ const Contact = () =>
                     type="text"
                     name="subject"
                     placeholder="Subject"
+                    required
                     className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"
                     value={values.subject}
                     onChange={handleChange}
@@ -167,15 +176,23 @@ const Contact = () =>
                 name="message"
                 rows="10"
                 placeholder="Write a Message"
+                required
                 value={values.message}
                 onChange={handleChange}
                 className="bg-[#0E2207] text-paraclr px-10 w-full py-5 rounded-lg my-4"
               ></textarea>
               <div className="">
                 <button
-                  className="bg-primary text-white rounded-3xl px-3 py-3"
+                  className="bg-primary text-white rounded-3xl px-3 py-3 disabled:bg-cardBg"
                   onClick={onSubmit}
                   isLoading={isLoading}
+                  disabled={
+                    !values.name ||
+                    !values.email ||
+                    !values.phone ||
+                    !values.subject ||
+                    !values.message
+                  }
                 >
                   Send a Message
                 </button>

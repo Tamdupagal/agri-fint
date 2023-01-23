@@ -17,6 +17,7 @@ import { EffectFade, Autoplay, Pagination } from "swiper";
 import { TbPlant, TbRelationOneToOne } from "react-icons/tb";
 import { BsBarChartLine } from "react-icons/bs";
 import { GiFarmTractor } from "react-icons/gi";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -83,7 +84,9 @@ const BannerCard = () => {
         </div>
 
         <Button className="animate__animated animate__slideOutUp main_btn">
+          <Link href={"/contact"}>
           Discover more
+          </Link>
         </Button>
       </div>
 

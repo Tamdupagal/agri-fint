@@ -27,7 +27,7 @@ const Banner = () => {
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,
-          stopOnLast:true,
+          stopOnLast: true,
         }}
         effect={"fade"}
         direction={"horizontal"}
@@ -82,11 +82,8 @@ const BannerCard = () => {
             <h1 className="text-[80px] lg:text-[170px] my-5 ">Agrifint.</h1>
           </div>
         </div>
-
         <Button className="animate__animated animate__slideOutUp main_btn">
-          <Link href={"/contact"}>
-          Discover more
-          </Link>
+          <Link href={"/contacthome"}>Discover more</Link>
         </Button>
       </div>
 

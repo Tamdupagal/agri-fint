@@ -229,7 +229,9 @@ const Header = () => {
           <li className="icon facebook">
             <span className="tooltip">+91 9637778041</span>
             <span>
-              <AiFillPhone />
+              <a href="tel:9637778041">
+                <AiFillPhone />
+              </a>
             </span>
           </li>
         </div>

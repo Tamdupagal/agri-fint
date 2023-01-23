@@ -38,7 +38,7 @@ const customMarks = [
 
   {
     value: 99,
-    label:"1000000",
+    label: "1000000",
     amount: 1000000,
   },
   // {
@@ -53,7 +53,7 @@ const Calculator = () => {
     <div className="px-6 lg:px-36 bg-dark text-fontclr  py-10 ">
       <div className="flex flex-col items-center text-center">
         <p className="text-xl font-semibold text-primary capitalize">
-          CALCULATE YOUR RETURNS ON INVESTMENT1
+          CALCULATE YOUR RETURNS ON INVESTMENT
         </p>
         <h2 className="text-3xl lg:text-5xl my-3 uppercase">
           Estimate your Earnings before Investing
@@ -84,7 +84,7 @@ const SliderBar = () => {
   const getPackage = calcolatorData.find((data) => value === data.value);
   const { packages, payout, rate, amount, img } = getPackage;
   const getTakeaway = parseInt(amount) + parseInt(amount * (rate / 100));
- 
+
   const bankFdProfit =
     parseInt(getTakeaway) + parseInt(getTakeaway * (3 / 100));
   const bankFdTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (95 / 100));

@@ -46,7 +46,7 @@ const Shop = () => {
                   <td className="px-6 py-4">5000</td>
                   <td className="px-6 py-4">25000</td>
                   <td className="px-6 py-4">200000</td>
-                  <td className="px-6 py-4 text-right">1000000 </td>
+                  <td className="px-6 py-4 ">1000000 </td>
                 </tr>
                 <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
@@ -58,7 +58,7 @@ const Shop = () => {
                   <td className="px-6 py-4">10%</td>
                   <td className="px-6 py-4">12%</td>
                   <td className="px-6 py-4">16% </td>
-                  <td className="px-6 py-4 text-right">18%</td>
+                  <td className="px-6 py-4">18%</td>
                 </tr>
                 <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
@@ -70,7 +70,7 @@ const Shop = () => {
                   <td className="px-6 py-4">12 months</td>
                   <td className="px-6 py-4">12 months</td>
                   <td className="px-6 py-4">12 months</td>
-                  <td className="px-6 py-4 text-right">18 months</td>
+                  <td className="px-6 py-4 ">18 months</td>
                 </tr>
                 <tr className="bg-cardBg   hover:bg-primary ">
                   <th
@@ -82,7 +82,7 @@ const Shop = () => {
                   <td className="px-6 py-4">Monthly</td>
                   <td className="px-6 py-4">Monthly</td>
                   <td className="px-6 py-4">Quarterly</td>
-                  <td className="px-6 py-4 text-right">Quarterly</td>
+                  <td className="px-6 py-4 ">Quarterly</td>
                 </tr>
               </tbody>
             </table>

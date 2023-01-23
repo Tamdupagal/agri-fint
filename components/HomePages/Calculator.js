@@ -84,25 +84,31 @@ const SliderBar = () => {
   const getPackage = calcolatorData.find((data) => value === data.value);
   const { packages, payout, rate, amount, img } = getPackage;
   const getTakeaway = parseInt(amount) + parseInt(amount * (rate / 100));
+  const getTakeaway1 = parseInt(amount) + parseInt(amount * (7 / 100));
+  const getTakeaway2 = parseInt(amount) + parseInt(amount * (8 / 100));
+  const getTakeaway3 = parseInt(amount) + parseInt(amount * (12 / 100));
 
-  const bankFdProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (7 / 100));
-  const bankFdTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (95 / 100));
+  const agriFint = getTakeaway - amount;
+  const bankFdProfit = parseInt( getTakeaway1 );
+  const bankProfit = bankFdProfit - amount;
+  const bankFdTaxs = parseInt(bankProfit) - parseInt(bankProfit * (90 / 100));
 
-  const bondProfit = parseInt(getTakeaway) + parseInt(getTakeaway * (8 / 100));
-  const bondTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (90 / 100));
+  const bondProfit = parseInt(getTakeaway2);
+  const bondPr = bondProfit - amount;
+  const bondTaxs = parseInt(bondPr) - parseInt(bondPr * (90 / 100));
 
-  const mutualFundProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (12 / 100));
+  const mutualFundProfit = parseInt( getTakeaway3 );
+  const mutualProfint = mutualFundProfit - amount;
+
   const mutualFundTaxs =
-    parseInt(getTakeaway) - parseInt(getTakeaway * (92 / 100));
-
+    parseInt(mutualProfint) - parseInt(mutualProfint * (90 / 100));
+  
   const data = {
     labels: ["Bank FD", "Bond", "Mutual Fund", "Agrifint"],
     datasets: [
       {
         label: "Profits",
-        data: [bankFdProfit, bondProfit, mutualFundProfit, getTakeaway],
+        data: [bankProfit, bondPr, mutualProfint, agriFint],
         backgroundColor: ["#1F6306"],
         borderColor: ["rgba(255, 99, 132, 1)"],
       },

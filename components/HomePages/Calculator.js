@@ -86,14 +86,14 @@ const SliderBar = () => {
   const getTakeaway = parseInt(amount) + parseInt(amount * (rate / 100));
 
   const bankFdProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (3 / 100));
+    parseInt(getTakeaway) + parseInt(getTakeaway * (7 / 100));
   const bankFdTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (95 / 100));
 
-  const bondProfit = parseInt(getTakeaway) + parseInt(getTakeaway * (6 / 100));
+  const bondProfit = parseInt(getTakeaway) + parseInt(getTakeaway * (8 / 100));
   const bondTaxs = parseInt(getTakeaway) - parseInt(getTakeaway * (90 / 100));
 
   const mutualFundProfit =
-    parseInt(getTakeaway) + parseInt(getTakeaway * (6 / 100));
+    parseInt(getTakeaway) + parseInt(getTakeaway * (12 / 100));
   const mutualFundTaxs =
     parseInt(getTakeaway) - parseInt(getTakeaway * (92 / 100));
 

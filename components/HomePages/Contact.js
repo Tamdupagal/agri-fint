@@ -151,7 +151,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
                   <input
-                    type="text"
+                    type="number"
                     name="phone"
                     placeholder="Phone"
                     required

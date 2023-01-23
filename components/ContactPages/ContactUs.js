@@ -28,7 +28,7 @@ const ContactUs = () => {
   const router = useRouter();
 
   const [state, setState] = useState(initState);
-  const { values,  error } = state;
+  const { values, error } = state;
   // console.log(state);
 
   const handleChange = ({ target }) =>
@@ -43,9 +43,9 @@ const ContactUs = () => {
   const onSubmit = async () => {
     setState((prev) => ({
       ...prev,
-         }));
+    }));
     // Router.push("/");
-    
+
     try {
       await sendContactForm(values);
     } catch (error) {
@@ -86,7 +86,7 @@ const ContactUs = () => {
               </div>
               <div className="flex flex-col lg:flex-row items-center gap-3 w-full">
                 <input
-                  type="text"
+                  type="number"
                   name="phone"
                   placeholder="Phone"
                   className="bg-[#0E2207] text-paraclr px-5 w-full py-5 rounded-lg"

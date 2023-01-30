@@ -46,14 +46,14 @@ export const testimonialData = [
     designation: "Senior P Manager, Airtel Digital",
     img: "/assets/testimonials/t1.jpg",
   },
-  {
-    id: 102,
-    name: "Ayurshi Sinha",
-    comment:
-      "The returns are much higher than the FD returns. Safe and amazing investment. Already recommended to a lot of my friends. Satisfied with the prompt response of the team for all my queries.",
-    designation: "Senior Research Associate",
-    img: "/assets/testimonials/t2.jpg",
-  },
+  // {
+  //   id: 102,
+  //   name: "Ayurshi Sinha",
+  //   comment:
+  //     "The returns are much higher than the FD returns. Safe and amazing investment. Already recommended to a lot of my friends. Satisfied with the prompt response of the team for all my queries.",
+  //   designation: "Senior Research Associate",
+  //   img: "/assets/testimonials/t2.jpg",
+  // },
   {
     id: 103,
     name: "Shachi Surabhi",
@@ -67,7 +67,7 @@ export const testimonialData = [
     name: "Ankit Chandra",
     comment:
       "I am pleased with Agrifint's investment plan and their commitment, detail, and strategic thinking. Their dedication to me as a customer shows integrity and character, which is important in building trust as a potential investor. Thank you.",
-    designation: "Vice President",
+    designation: "Vice President - Sales and Business Excellence",
     img: "/assets/testimonials/t4.jpg",
   },
   // {

@@ -17,35 +17,22 @@ const customMarks = [
     label: "5000",
     amount: 5000,
   },
-  // {
-  //   value: 20,
-  //   amount: 10000,
-  // },
   {
     value: 33,
     label: "25000",
     amount: 25000,
   },
-  // {
-  //   value: 60,
-  //   amount: 40000,
-  // },
+
   {
     value: 66,
     label: "200000",
     amount: 200000,
   },
-
   {
     value: 99,
     label: "1000000",
     amount: 1000000,
   },
-  // {
-  //   value: 100,
-  //   label: "2000000",
-  //   amount: 2000000,
-  // },
 ];
 
 const Calculator = () => {
@@ -89,7 +76,7 @@ const SliderBar = () => {
   const getTakeaway3 = parseInt(amount) + parseInt(amount * (12 / 100));
 
   const agriFint = getTakeaway - amount;
-  const bankFdProfit = parseInt( getTakeaway1 );
+  const bankFdProfit = parseInt(getTakeaway1);
   const bankProfit = bankFdProfit - amount;
   const bankFdTaxs = parseInt(bankProfit) - parseInt(bankProfit * (90 / 100));
 
@@ -97,12 +84,12 @@ const SliderBar = () => {
   const bondPr = bondProfit - amount;
   const bondTaxs = parseInt(bondPr) - parseInt(bondPr * (90 / 100));
 
-  const mutualFundProfit = parseInt( getTakeaway3 );
+  const mutualFundProfit = parseInt(getTakeaway3);
   const mutualProfint = mutualFundProfit - amount;
 
   const mutualFundTaxs =
     parseInt(mutualProfint) - parseInt(mutualProfint * (90 / 100));
-  
+
   const data = {
     labels: ["Bank FD", "Bond", "Mutual Fund", "Agrifint"],
     datasets: [

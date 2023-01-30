@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { BsCheck2 } from "react-icons/bs";
 import Button from "../../utilities/Button";
-import { GiFarmTractor } from "react-icons/gi"
+import { GiFarmTractor } from "react-icons/gi";
 import { TbSeeding, TbPlant2 } from "react-icons/tb";
-import {FaHandHoldingUsd} from "react-icons/fa"
+import { FaHandHoldingUsd } from "react-icons/fa";
 
 const OrganicFood = () => {
   return (
@@ -39,7 +39,7 @@ const OrganicFood = () => {
         <div className="text-start pt-2">
           <p className="text-paraclr text-xl py-5">
             Our farms are agronomically checked and maintained for fresh
-            produce. The live stock is then supplied to entire nation.{" "}
+            produce. The Farm Produce is then supplied to entire nation.{" "}
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full ">

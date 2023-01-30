@@ -93,7 +93,7 @@ const BannerCard = () => {
           <div className="flex items-center gap-5 ">
             <TbPlant className="text-yellow text-2xl lg:text-4xl font-bold" />
             <div className="text-xl lg:text-2xl font-semibold text-fontclr text-start">
-              <h2>Gathered farming</h2>
+              <h2>Managed Farming</h2>
             </div>
           </div>
           <div className="flex items-center gap-5 p-5">

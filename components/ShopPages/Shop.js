@@ -46,7 +46,7 @@ const Shop = () => {
                   <td className="px-6 py-4">5000</td>
                   <td className="px-6 py-4">25000</td>
                   <td className="px-6 py-4">200000</td>
-                  <td className="px-6 py-4 ">1000000 </td>
+                  <td className="px-6 py-4 ">500000 </td>
                 </tr>
                 <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th
@@ -58,7 +58,7 @@ const Shop = () => {
                   <td className="px-6 py-4">10%</td>
                   <td className="px-6 py-4">12%</td>
                   <td className="px-6 py-4">16% </td>
-                  <td className="px-6 py-4">18%</td>
+                  <td className="px-6 py-4">17%</td>
                 </tr>
                 <tr className="bg-cardBg border-b  hover:bg-primary ">
                   <th

@@ -30,8 +30,8 @@ const customMarks = [
   },
   {
     value: 99,
-    label: "1000000",
-    amount: 1000000,
+    label: "500000",
+    amount: 500000,
   },
 ];
 

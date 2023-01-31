@@ -191,8 +191,8 @@ export const calcolatorData = [
     value: 99,
     packages: "AGventure",
     payout: "Quarterly",
-    rate: 18,
-    amount: "1000000",
+    rate: 17,
+    amount: "500000",
     img: "/assets/Banyan Tree.svg",
   },
   // {

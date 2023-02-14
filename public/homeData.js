@@ -129,7 +129,7 @@ export const accordionData = [
   {
     id: 224,
     header: " Add money and invest",
-    details: "Simply add money to Growpital Wallet, e-sign required documents.",
+    details: "Simply add money to AgriFint Wallet, e-sign required documents.",
     img: "/assets/steps/step3.png",
   },
   {
